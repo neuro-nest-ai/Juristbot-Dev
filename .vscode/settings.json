@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "https-sonar-neuronestai-org-",
+        "projectKey": "Juristbot-API"
+    }
+}
