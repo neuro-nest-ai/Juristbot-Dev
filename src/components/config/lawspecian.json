@@ -1,0 +1,101 @@
+{
+    "sections": [
+      {
+        "id": 1,
+        "name": "Civil Law Specialists",
+        "specialists": [
+          "Civil Rights Lawyer",
+          "Contract Lawyer",
+          "Property/Real Estate Lawyer",
+          "Consumer Protection Lawyer",
+          "Family Lawyer",
+          "Labour and Employment Lawyer"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Criminal Law Specialists",
+        "specialists": [
+          "Criminal Defense Lawyer",
+          "White-Collar Crime Lawyer",
+          "Cybercrime Lawyer",
+          "Narcotics and Drugs Law Specialist"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Corporate and Business Law Specialists",
+        "specialists": [
+          "Corporate Lawyer",
+          "Mergers & Acquisitions Lawyer",
+          "Intellectual Property",
+          "Competition and Antitrust Lawyer",
+          "Banking and Finance Lawyer",
+          "Securities and Investment Lawyer"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Constitutional and Administrative Law Specialists",
+        "specialists": [
+          "Constitutional Lawyer",
+          "Human Rights Lawyer",
+          "Public Interest Litigation (PIL) Lawyer",
+          "Election Lawyer",
+          "Government and Policy Lawyer"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Taxation and Financial Law Specialists",
+        "specialists": [
+          "Tax Lawyer ",
+          "Bankruptcy and Insolvency Lawyer"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Technology and Cyber Law Specialists",
+        "specialists": [
+          "Data Protection and Privacy Lawyer",
+          "Artificial Intelligence and Legal Tech Lawyer",
+          "IT and Cybersecurity Lawyer"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Environmental and Energy Law Specialists",
+        "specialists": [
+          "Environmental Lawyer",
+          "Energy and Natural Resources Lawyer"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Arbitration and Dispute Resolution Specialists",
+        "specialists": [
+          "Arbitration and Mediation Lawyer",
+          "Negotiation Lawyer"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Healthcare and Medical Law Specialists",
+        "specialists": [
+          "Medical Negligence Lawyer",
+          "Pharmaceutical and Biotechnology Lawyer"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "International Law Specialists",
+        "specialists": [
+          "International Trade Lawyer",
+          "Maritime and Admiralty Lawyer",
+          "Immigration and Refugee Lawyer",
+          "Diplomatic and Treaty Lawyer"
+        ]
+      }
+    ]
+  }
+  

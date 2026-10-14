@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+.cals-headstxt {
+    font-size: 2rem; 
+    color: rgb(0, 0, 0);
+    font-family: "Figtree", sans-serif;
+    font-weight: 650;
+    text-align: center; 
+    word-wrap: break-word;
+  }
+  
+  @media (max-width: 1208px) {
+    .cals-headstxt {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .cals-headstxt {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cals-headstxt {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .cals-headstxt {
+      font-size: 1.5rem;
+    }
+  }
+  
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.searchbar-location {
+    width: 100%;
+    padding: 10px 10px 10px 35px; 
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-family: "Figtree", sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    color: #999;
+}
+
+.lawyer-card {
+    background-color: #222; 
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: auto;
+    min-height: 200px;
+    max-height: 200px; 
+}
+
+.lawyer-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.lawyer-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 120px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.lawyer-role {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 140px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.lawyer-phone {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.lawyer-city {
+    background-color: #f3Ad18; 
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    max-width: 125px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+  
+@media (max-width: 576px) {
+    .lawyer-card {
+        width: 100%;
+      max-width: 305px;
+    }
+  }
+ 
+  .law-specialists {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e0d9c8;
+    margin-bottom: 5px;
+    margin-left: 0; 
+    max-width: 120px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block; 
+  }
+
+  .modal-cals {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1000;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .modal-overlay-cals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(43, 42, 42, 0.4);
+    z-index: 999;
+
+  }
+  
+  .profile-form-cals {
+    width: 100%;
+    margin-bottom: 2px;
+    background-color: #ffffffcc;
+    padding: 10px 10px;
+    border: 2px solid #CACED8;
+    color: #4d4b4b;
+    outline: 0;
+    border-radius: 9px;
+    text-align: start;
+    font-family: "Figtree", sans-serif;
+    cursor: pointer;
+  } 
+    .profile-form-cals:focus {
+    border: solid 2px #fee568 !important;
+    outline: 0;
+    box-shadow: none !important;
+  }
+
+  textarea {
+    resize: none !important;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .cals-submit-btn{
+    background-color: #f3Ad18; 
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    border:  1.5px solid #f3Ad18;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    max-width: 100px;
+  }
+  .cals-cancle-btn{
+    background-color: #ffffff; 
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    border:  1.5px solid #f3Ad18;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    max-width: 100px;
+   
+  }

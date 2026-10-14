@@ -1,0 +1,206 @@
+
+:root,
+  [data-theme="dark"] {
+    color-scheme: dark;
+
+    /* ── Brand ── */
+    --brand:            #FFC42B;
+    --brand-hover:      #FFD35E;
+    --brand-press:      #E8AF15;
+    --brand-soft:       rgba(255, 196, 43, 0.14);   /* tinted fills */
+    --brand-ring:       rgba(255, 196, 43, 0.30);   /* focus ring   */
+    --brand-on:         #1A1710;  
+    --texthistory-on: rgb(252, 196, 54); 
+    --app-icon-trashicon:rgb(255, 255, 255)    ;             /* text on gold */
+
+    /* ── Surfaces (elevation ladder) ── */
+    --app-bg:           #0B0B0D;   /* page          */
+    --app-bg-secondary: #141417;   /* section        */
+    --sidebar-bg:       #08080A;   /* deepest        */
+    --topnav-bg:        #08080A;
+    --card-bg:          #16161A;   /* raised         */
+    --card-bg-hover:    #1E1E23;
+    --surface-1:        rgba(255, 255, 255, 0.04);
+    --surface-2:        rgba(255, 255, 255, 0.07);
+    --surface-3:        rgba(255, 255, 255, 0.11);
+
+    /* ── Text ── */
+    --app-text:           #ECECEF;  /* primary — not pure white */
+    --app-text-secondary: #B4B4BC;
+    --app-icon-secondary: #8A8A93;  /* muted / captions */
+    --app-text-disabled:  #5A5A62;
+    --app-text-popup:     #16161A;  /* text inside light modals */
+
+    /* ── Lines ── */
+    --border:        rgba(255, 255, 255, 0.09);
+    --border-strong: rgba(255, 255, 255, 0.16);
+    --divider:       rgba(255, 255, 255, 0.06);
+
+    /* ── Composer / inputs ── */
+    --form-bg:      #16161A;
+    --form-bg-focus:#1B1B20;
+    --form-border:  rgba(255, 255, 255, 0.10);
+    --form-text:    #ECECEF;
+    --form-placeholder: #6E6E77;
+
+    /* ── Chat bubbles ── */
+    --bubble-user-bg:   #232329;
+    --bubble-user-text: #ECECEF;
+
+    /* ── Sidebar items ── */
+    --newchat-bgs:       rgba(255, 255, 255, 0.06);
+    --newchat-bgs-hover: rgba(255, 255, 255, 0.11);
+    --newchat-text:      #ECECEF;
+    --newchat-border:    rgba(255, 255, 255, 0.10);
+    --linkings-hover:    rgba(255, 255, 255, 0.07);
+    --linkings-active:   rgba(255, 196, 43, 0.12);
+    --activenave-clr: #ffffff;
+
+    /* ── Modals / popovers (dark in dark mode — no more white flash) ── */
+    --modal-bg:      #1A1A1F;
+    --modal-border:  rgba(255, 255, 255, 0.10);
+    --modal-text:    #ECECEF;
+    --modal-muted:   #9A9AA3;
+    --modal-input-bg:#111114;
+
+    /* ── Semantic ── */
+    --success: #3DD68C;
+    --danger:  #F76B6B;
+    --info:    #7C8CF8;
+
+    /* ── Scrollbar ── */
+    --scrollbar-thumb: #35353C;
+    --scrollbar-track: transparent;
+
+    /* ── Depth ── */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.45);
+    --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 18px 50px rgba(0, 0, 0, 0.55);
+    --radius:    12px;
+    --radius-lg: 18px;
+
+
+     --qx-menua-bg: rgb(0, 0, 0);
+  }
+
+  [data-theme="light"] {
+    color-scheme: light;
+
+    --brand:            #E9A800;   /* slightly deeper — gold on white needs it */
+    --brand-hover:      #F5B71C;
+    --brand-press:      #CE9200;
+    --brand-soft:       rgba(233, 168, 0, 0.12);
+    --brand-ring:       rgba(233, 168, 0, 0.28);
+    --brand-on:         #1A1710;
+    --texthistory-on: rgb(0, 0, 0);    
+     --app-icon-trashicon:rgb(2, 2, 2)    ;  
+
+    /* Warm off-white — pure #fff kannu adikkum, idhu soft-ah irukkum */
+    --app-bg:           #f6f6f6;
+    --app-bg-secondary: #F4F4F2;
+    --sidebar-bg:       #f6f6f6;
+    --topnav-bg:        #0B0B0D;   /* nav stays dark = brand anchor */
+    --card-bg:          #FFFFFF;
+    --card-bg-hover:    #F6F6F4;
+    --surface-1:        rgba(0, 0, 0, 0.03);
+    --surface-2:        rgba(0, 0, 0, 0.06);
+    --surface-3:        rgba(0, 0, 0, 0.10);
+
+    --app-text:           #1A1A1E;
+    --app-text-secondary: #4A4A52;
+    --app-icon-secondary: #6E6E77;
+    --app-text-disabled:  #A5A5AD;
+    --app-text-popup:     #1A1A1E;
+
+    --border:        rgba(0, 0, 0, 0.10);
+    --border-strong: rgba(0, 0, 0, 0.18);
+    --divider:       rgba(0, 0, 0, 0.07);
+
+    --form-bg:      #FFFFFF;
+    --form-bg-focus:#FFFFFF;
+    --form-border:  rgba(0, 0, 0, 0.12);
+    --form-text:    #1A1A1E;
+    --form-placeholder: #9A9AA3;
+
+    --bubble-user-bg:   #EFEFED;
+    --bubble-user-text: #1A1A1E;
+
+    --newchat-bgs:       rgba(0, 0, 0, 0.05);
+    --newchat-bgs-hover: rgba(0, 0, 0, 0.09);
+    --newchat-text:      #1A1A1E;
+    --newchat-border:    rgba(0, 0, 0, 0.10);
+    --linkings-hover:    rgba(0, 0, 0, 0.06);
+    --linkings-active:   rgba(233, 168, 0, 0.14);
+    --activenave-clr: #000000;
+
+    --modal-bg:      #FFFFFF;
+    --modal-border:  rgba(0, 0, 0, 0.10);
+    --modal-text:    #1A1A1E;
+    --modal-muted:   #6E6E77;
+    --modal-input-bg:#FAFAF9;
+
+    --success: #12864F;
+    --danger:  #D93A3A;
+    --info:    #4F46E5;
+
+    --scrollbar-thumb: #D2D2CE;
+    --scrollbar-track: transparent;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 18px 50px rgba(0, 0, 0, 0.12);
+
+     --qx-menua-bg: rgba(255, 255, 255, 0.96);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+    Base
+    ═══════════════════════════════════════════════════════════════ */
+
+  * { box-sizing: border-box; }
+  html, body, #root {
+    height: 100%;
+    background-color: var(--app-bg);   
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--app-bg);   
+    color: var(--app-text);
+    font-family: "Figtree", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+ 
+  :where(a, .kpi-card, .linkings, .newchatbtn, .doc-open-card) {
+    transition: background-color 0.15s ease, border-color 0.15s ease,
+                color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  }
+  *::-webkit-scrollbar { width: 8px; height: 8px; }
+  *::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+  *::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 8px;
+  }
+  *::-webkit-scrollbar-thumb:hover { background: var(--border-strong); }
+
+  /* Text selection */
+  ::selection {
+    background: var(--brand-soft);
+    color: var(--app-text);
+  }
+

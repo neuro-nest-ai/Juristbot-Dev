@@ -1,0 +1,28 @@
+.background-color-terms{
+   background-color: #ffff !important;
+}
+ 
+ .terms-head{
+    color: #F5A200;
+    font-family: "Figtree", sans-serif;
+        font-weight: 700; 
+    font-size: 25px;
+ }
+ .termsecond{
+    color:#132F41;
+    font-weight: 700; 
+    font-size: 18px;
+    font-family: "Figtree", sans-serif; }
+ .texthird{
+    color:#181818;
+    font-weight: 700; 
+   font-size: 18px;
+   font-family: "Figtree", sans-serif; }
+ .termsp{
+   color: #6B6B6B;
+   font-family: "Figtree", sans-serif;
+   font-size: 16px;
+ }
+ .emailtext{
+    color: #F5A200;
+ }

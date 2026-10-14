@@ -1,0 +1,289 @@
+.price-banner-img-new {
+  width: 100%;
+  min-height: 100%; 
+  background-image: url('../assetes/P_pattern.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff !important;
+}
+
+.price-new-header{
+  font-size: 32px;
+  color: #030303;
+  font-weight: 500;
+  text-align: center;
+}
+
+.price-new-text{
+  font-size: 14px;
+  color: #898989;
+  font-weight: 400;
+  text-align: center;
+}
+
+.row-equal-height > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card-new-l {
+  flex:  1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  min-height: unset;
+  padding: 20px;
+  border: 1.5px solid #030303;
+  border-radius: 13px !important;
+}
+.card-title-price{
+    font-size: 26px;
+    color: #030303;
+    font-weight: 500;
+}
+.card-title-price-s{
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.card-price-new{
+  color: #030303; 
+  font-size: 26px; 
+  font-weight: 600
+}
+.month-text-new{
+    font-size: 16px;
+    color: #030303;
+    font-weight: 400;
+}
+.price-new-p{
+  font-size: 14px;
+  color: #898989;
+  font-weight: 400;
+}
+.credit-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #FFD119;
+  color: #412402;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+.credit-badge span:last-child {
+  line-height: 1.3;
+}
+.credit-badge-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #412402;
+  color: #FFD119;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}
+.ul-text-new-s{
+  list-style: none;
+  color: #030303;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0px;
+}
+.ul-text-new-s li{
+ display: flex;
+  align-items: center;
+  padding-top: 12px;
+}
+.sub-text-price{
+    font-size: 14px;
+    color: #898989;
+    font-weight: 400;
+    display:block;
+}
+
+.highlight-standard {
+  position: relative;
+  background-color: #000000;
+  color: #ffffff;
+  overflow: hidden;
+  border: none;
+}
+
+.highlight-standard .card-title-price,
+.highlight-standard .ul-text-new-s li,
+.highlight-standard .month-text-new,
+.highlight-standard .card-price-new {
+  color: #ffffff;
+}
+
+.highlight-standard .btn-warning {
+  background-color: #FFC107;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* Triangle Ribbon */
+.highlight-standard::before {
+  content: '★';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  bottom: 10px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 90px;
+  transform: rotate(58deg);
+  transform-origin: top right;
+  z-index: 1;
+}
+
+.highlight-standard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 110px solid #FFC107;
+  border-left: 110px solid transparent;
+  z-index: 0;
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  border: 1.5px solid #000;
+  color: #000;
+  font-weight: 500;
+}
+.row-left-right{
+    margin-right: calc(-.0 * var(--bs-gutter-x)) !important;
+    margin-left: calc(-.0 * var(--bs-gutter-x)) !important;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+}
+
+.radio-label input[type='radio'] {
+  accent-color: black;
+}
+.feature-sub-text{
+  font-size: 14px;
+  color:  #333;
+  font-weight: 400;
+  margin-left: 36px;
+}
+.Enjoy-text {
+  background-color: #030303;      
+  color: #FFD119;               
+  padding: 6px 12px;
+  text-align: center;
+  word-spacing: 5px;
+  font-weight: 600;
+  border-radius: 4px;           
+  display: inline-block;     
+}
+
+.plan-toggle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.toggle-button {
+  background-color: #030303;
+  border-radius: 12px;
+  padding: 4px;
+  display: flex;
+  width: fit-content;
+  margin-bottom: 8px;
+}
+
+.plan-option {
+  padding: 5px 18px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.plan-option.active {
+  background-color: #FFC42B;
+  color: rgb(255, 255, 255);
+}
+
+.save-note-price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #030303;
+}
+
+.Enjoy-text {
+  background-color: #030303;      
+  color: #FFD119;               
+  padding: 6px 12px;
+  text-align: center;
+  word-spacing: 5px;
+  font-weight: 600;
+  border-radius: 4px;           
+  display: inline-block;     
+}
+.offer-backdrop{
+  position:fixed; inset:0; background:rgba(0,0,0,.45);
+  display:flex; align-items:center; justify-content:center; z-index:1050;
+}
+.offer-modal{
+  width:min(92vw, 440px); 
+  background:#fff;
+  background-image: url('../page/oferback.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+   border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.25); position:relative; overflow:hidden;
+}
+.offer-close{
+  position:absolute;
+  right:10px; top:8px;
+  background:#0000;
+  border:0;
+  font-size:28px; 
+  line-height:1; 
+  cursor:pointer;
+  color: #000;
+}
+.offer-body{ padding:22px; text-align:center; }
+.offer-badge{ width:152px; height:auto; margin:8px auto 12px; display:block; }
+.offer-cta{
+  width:100%; border:0; padding:8px 16px; border-radius:8px; cursor:pointer;
+  background:#ffc107; font-weight:700;
+  color: #000;
+}

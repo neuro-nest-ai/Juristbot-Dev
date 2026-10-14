@@ -1,0 +1,242 @@
+/* template1.css — all classes prefixed t3- */
+
+.t3-loading {
+  display: flex; justify-content: center;
+  align-items: center; min-height: 100vh;
+}
+
+.t3-wrapper {
+ padding: 50px 125px;
+}
+
+/* Navbar */
+.t3-navbar {
+  display: flex; justify-content: center; gap: 24px;
+  background: #000000; padding: 14px 20px;
+  position: sticky; top: 0; z-index: 100;
+  border-radius: 30px;
+  width: 80%;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  margin: 0 auto;
+}
+.t3-nav-link {
+  color: #fff; text-decoration: none;
+  font-size: 20px; font-weight: 600;
+}
+.t3-nav-link:hover { color: #f5a623; }
+
+/* Hero */
+.t3-hero {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0px;
+  flex-wrap: wrap; gap: 60px;
+  background-color: #F6F1E9;
+}
+.t3-avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; object-fit: cover;
+  border: 1px solid #ffffff;
+}
+.t3-name { font-size: 38px; font-weight: 700; margin: 12px 0 4px; color: #000000; }
+.t3-role { color: #312F2F; font-size: 22px; margin: 0; }
+.t3-stars { color: #f5a623; font-size:20px;  }
+.t3-stars span { color: #333; font-size: 18px; font-weight: 600; }
+.t3-location { color: #312F2F; font-size: 14px;  }
+.t3-btn-primary {
+  background: #3B2F2F; color: #fff;
+  border: none; padding: 7px 24px;
+  width: 200px;
+  border-radius: 6px; cursor: pointer; font-size: 14px;
+}
+.t3-btn-secondary {
+  background: #3B2F2F; color: #ffffff;
+    width: 200px;
+    border: none; padding: 7px 24px;
+  border-radius: 6px; cursor: pointer; font-size: 14px;
+}
+
+/* Stats */
+.t3-stats {
+  display: flex; justify-content: space-around;
+  padding: 28px 20px; background: #3B2F2F;
+  border-top: 1px solid #eee;
+  flex-wrap: wrap; gap: 16px;
+}
+.t3-stat-item { text-align: center; }
+.t3-stat-val { display: block; font-size: 26px; font-weight: 700; color: #ffffff; }
+.t3-stat-label { font-size: 12px; color: #e7e7e7; }
+
+/* Sections */
+.t3-section { padding: 36px 0px; }
+.t3-section-title {
+  font-size: 32px; font-weight: 700;
+  border-bottom: 2px solid #eee; padding-bottom: 8px; margin-bottom: 16px;
+}
+.t3-about-text { color: #444; line-height: 1.8; font-size: 16px; }
+
+/* Tabs */
+.t3-tabs { display: flex; gap: 0; margin-bottom: 16px; border-bottom: 2px solid #eee; }
+.t3-tab {
+  padding: 8px 20px; background: none; border: none;
+  font-size: 14px; cursor: pointer; color: #666;
+  border-bottom: 2px solid transparent; margin-bottom: -2px;
+}
+.t3-tab.active { color: #0a0a0a; border-bottom: 2px solid #3B2F2F; font-weight: 600; }
+
+/* Tags */
+.t3-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.t3-tag {
+  background: #f0f0f0; border: 1px solid #ddd;
+  padding: 6px 14px; border-radius: 20px; font-size: 13px; color: #333;
+}
+
+/* Contact */
+.t3-contact {
+  background: #F6F1E9; color: #fff;
+  padding: 40px 24px; text-align: center;
+
+}
+.t3-contact-boxshdow{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px 5px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.t3-contact-title { font-size: 34px;font-weight: 700; color: #3B2F2F; margin-bottom: 8px; }
+.t3-contact-sub { font-size: 14px; color: #5B5656; max-width: 800px; margin: 0 auto ; }
+.t3-contact-card {
+  background: #fff; color: #1a1a2e;
+  border-radius: 10px; padding: 20px 28px;
+  display: inline-block;
+}
+.t3-contact-row {
+  display: flex; gap: 24px; justify-content: center;
+  flex-wrap: wrap; margin-top: 10px; font-size: 13px; color: #444;
+}
+
+.t3-section-about{
+  background-color: #F6F1E9;
+  padding: 70px 125px;
+}
+.t3-section-expertise{
+  background-color: #F6F1E9;
+  padding: 70px 125px;
+}
+.testimonials-section-title-h-t3{
+  font-size: 32px;
+  font-weight: 700;
+  color: #3B2F2F;
+}
+.testimonials-section-title-span-t3{
+  color: #000000 !important;
+}
+  /* Image Frame */
+  .testimonial-image-frame-listview-t3 {
+    width: 100%;
+    background-color: #3B2F2F;
+    padding: 35px;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 3/2;
+  }
+
+  .testimonials-section-listview-t3{
+    padding: 60px 120px;
+    background-color: #3B2F2F;
+}
+
+  .testimonial-card-listview-t3 {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #444921;
+    transition: all 0.3s ease;
+  } 
+
+  @media (max-width: 1024px) {
+  .t3-wrapper {
+    padding: 50px 85px;
+    }
+    .t3-navbar{
+      width: 90%;
+    }
+    .t3-nav-link {
+      color: #fff; text-decoration: none;
+      font-size: 18px; font-weight: 600;
+    }
+    .t3-hero {
+      padding: 100px 0px;
+    }
+  }
+
+  @media (max-width: 992px) {
+  .t3-wrapper {
+ padding: 45px 50px;
+}
+ .t3-navbar{
+      width: 90%;
+    }
+        .t3-nav-link {
+  color: #fff; text-decoration: none;
+  font-size: 18px; font-weight: 600;
+}
+ .t3-hero {
+      padding: 80px 0px;
+    }
+  }
+
+  @media (max-width: 768px) {
+  .t3-wrapper {
+ padding: 40px 25px;
+}
+ .t3-navbar{
+      width: 90%;
+    }
+        .t3-nav-link {
+  color: #fff; text-decoration: none;
+  font-size: 16px; font-weight: 500;
+}
+ .t3-hero {
+      padding: 70px 0px;
+    }
+  }
+
+  @media (max-width: 480px) {
+   .t3-wrapper {
+  padding: 30px 15px;
+  }
+  .testimonials-section-title-h-t3{
+  font-size: 26px;
+}
+ .t3-navbar{
+      width: 95%;
+    }
+        .t3-nav-link {
+  color: #fff; text-decoration: none;
+  font-size: 14px; font-weight: 500;
+}
+ .t3-hero {
+      padding: 30px 0px;
+      gap: 10px;
+    }
+    .t3-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; object-fit: cover;
+  border: 1px solid #f5a623;
+}
+.t3-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 12px 0 4px;
+  color: #000;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+  }

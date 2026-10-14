@@ -1,0 +1,82 @@
+
+.blog-upload-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  
+  /* File upload section */
+  .blog-upload-container .file-upload {
+    border: 2px dashed #fdd835;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+  
+  .blog-upload-container .file-upload label {
+    cursor: pointer;
+    color: #fdd835;
+    font-weight: bold;
+  }
+  
+  .blog-upload-container .file-upload label span {
+    text-decoration: underline;
+    color: #fdd835;
+  }
+  
+  /* Input fields and textarea */
+  .blog-upload-container input,
+  .blog-upload-container select,
+  .blog-upload-container textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #2a2a2a;
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-upload-container textarea {
+    height: 150px;
+  }
+  
+  /* Buttons */
+  .blog-upload-container .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .blog-upload-container button {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .blog-upload-container .save-draft-btn {
+    background-color: #4e4e4e;
+    color: white;
+  }
+  
+  .blog-upload-container .post-btn {
+    background-color: #fdd835;
+    color: #1e1e1e;
+  }
+  
+  /* Hover effects */
+  .blog-upload-container button:hover {
+    opacity: 0.9;
+  }
+  
+  .blog-upload-container .post-btn:hover {
+    background-color: #e6c02d;
+  }
+  

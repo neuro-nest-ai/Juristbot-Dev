@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+.backimage1 {
+  background-image: url('../Assets/Reg.png');
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.registertitletxt {
+  font-family: "Figtree", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffff;
+
+}
+.container-fluid.backimage1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh; 
+  background-color: #f0f0f0;
+}
+
+.registration-registersc {
+  width: 100%;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 20px;
+  background-color: #262626;
+  border: solid 2px #888888;
+}
+
+@media only screen and (max-width: 678px) {
+  .registration-registersce {
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.reglable {
+  font-family: "Figtree", sans-serif;
+
+}
+
+.regformbtns {
+  width: 100%;
+  max-width: 150px;
+  padding: 8px;
+  font-family: "Figtree", sans-serif;
+  background-color: rgba(255, 196, 43, 1);
+  border: none;
+  font-weight: 700;
+  border-radius: 12px;
+  color:#0D0C0C;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.reg-form {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 2px;
+  background-color: #5E5E5ECC;
+  padding: 10px;
+  padding-left: 35px !important;
+  border: 1px solid #5E5E5ECC;
+  color: #ffffff;
+  border-radius: 12px;
+  font-family: "Figtree", sans-serif;
+} 
+.reg-formslect {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 2px;
+  background-color: #5E5E5ECC;
+  padding: 10px;
+  padding-left: 35px !important;
+  border: 1px solid #5E5E5ECC;
+  color: #ffffff;
+  border-radius: 12px;
+  font-family: "Figtree", sans-serif;
+  appearance: none; 
+  cursor: pointer;
+  background: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmZmZmIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTcuNDMgOS43NEwxMiAxNC4zMmw0LjU3LTQuNTdjLjM5LS4zOS4zOS0xLjAyIDAtMS40MS0uMzktLjM5LTEuMDItLjM5LTEuNDEgMGwtMy43MyAzLjczLTMuNzMtMy43M2MtLjQtLjQtMS4wNS0uMzktMS40MSAwLS4zOS4zOS0uMzkgMS4wMiAwIDEuNDF6Ii8+PC9zdmc+') no-repeat; /* Dropdown icon */
+  background-position: calc(100% - 7px) center; 
+  background-size: 17px;
+  background-color: #5E5E5ECC; 
+}
+
+.reg-formslect:focus {
+  border: solid 1px #fee568 !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+
+@media only screen and (max-width: 678px) {
+  .reg-form {  
+    padding: 7px;
+    border-radius: 8px; 
+  } 
+  .reg-formslect{
+    border-radius: 9px;
+  }
+  
+}
+
+.btndivall{
+  display: flex;
+  justify-content:end; 
+}
+@media (max-width: 768px) {
+  .btndivall{
+    display: flex;
+    justify-content: center; 
+  }
+
+  .regformbtns {
+    width: 100%; 
+    margin-top: 15px; 
+    max-width: 100%;
+  }
+}
+
+
+.reg-form:focus {
+  border: solid 1px #fee568 !important;
+  outline: 0;
+  box-shadow: none !important;
+
+}
+
+
+.vertical-paperclip {
+  transform: rotate(180deg);
+
+}
+.ptextlogin{
+  margin: 0px 0px 0px 0px !important;
+  color: #AFAFAF;
+  font-family: "Figtree", sans-serif;
+  text-align: center;
+}
+.colornone{
+  text-decoration: none;
+}
+.colorlogin {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container .faicons {
+  position: absolute;
+  left: 10px;
+  top: 48%;
+  transform: translateY(-50%);
+  color: #dddddd; 
+}
+.error-message{
+  color: #ff0000;
+}
+.regformbtns:disabled {
+  background-color: #6b6b6b;
+  color: #d1d1d1;
+  cursor: not-allowed;
+}

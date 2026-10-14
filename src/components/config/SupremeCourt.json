@@ -1,0 +1,10 @@
+{
+ "SupremeCourt": [
+    {
+      "id": 1,
+      "name": "Supreme Court of India",
+      "location": "New Delhi",
+      "state": "Delhi"
+    }
+  ]
+}

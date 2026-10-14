@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+
+
+.profile-Form-txt{
+  color: #232323;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  
+  .placeholder{
+    width: 100px;
+    height: 100px;
+    border-radius: 50% !important;
+    display: flex;
+    background-color: aliceblue;
+    align-items: center;
+    border: 3px solid #ffcc00;
+    justify-content: center;  
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: "Figtree", sans-serif;
+  }
+  
+  .uploadIcon {
+    width: 35px;
+    opacity: 1;
+  }
+  
+  .image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #ffcc00be;
+
+  }
+  
+  .imageUploadInput {
+    display: none;
+  }
+  
+
+  .cameraIcon {
+    width: 15px;
+    height: 15px;
+  }
+  .uploadButton {
+    padding: 6px 20px;
+    background: #ffffff40;
+    border: 2px solid #FFF5DA;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 550;
+    color: #e0a800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: "Figtree", sans-serif;
+    gap: 7px;
+  }
+  .uploadButton:hover {
+    background: #ffcc0060;
+  }
+  
+  .uploadIconText {
+    font-size: 16px;
+  }
+  
+.lable-profile-txt{
+    color: #083A50 !important;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+  .profile-form {
+    width: 100%;
+    margin-bottom: 2px;
+    background-color: #ffffffcc;
+    padding: 10px;
+    border: 2px solid #CACED8;
+    color: #000000;
+    outline: 0;
+    border-radius: 9px;
+    font-family: "Figtree", sans-serif;
+    cursor: pointer;
+  } 
+  .profile-form-div {
+    width: 100%;
+    margin-bottom: 2px;
+    background-color: #ffffffcc;
+    padding: 0px 10px;
+    border: 2px solid #CACED8;
+    color: #4d4b4b;
+    outline: 0;
+    height: 44px;
+    border-radius: 9px;
+    text-align: start;
+    font-family: "Figtree", sans-serif;
+    cursor: pointer;
+  } 
+  
+  .profile-form:focus {
+    border: solid 2px #fee568 !important;
+    outline: 0;
+    box-shadow: none !important;
+  }
+
+  
+.profile-save-btn {
+  width: 100%;
+  max-width: 180px;
+  padding: 8px;
+  background-color: rgba(255, 196, 43, 1);
+  border: none;
+  border-radius: 13px;
+  font-family: "Figtree", sans-serif;
+  color: #0D0C0C;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.disabled-input {
+  background-color: #f0f0f0;
+  color: #888888;
+  cursor: not-allowed;
+}
+
+
+.dropdown-options{
+  display: flex !important;
+  padding-top: 5px;
+  align-items: center;
+  font-weight: 300;
+  color: rgb(63, 62, 62);
+ 
+}
+.dropdown-list{
+ border:  1px solid #d9d9d965;
+  padding: 1px 0px;
+  border-radius: 5px;
+  display: block;
+  top: 50px;
+  right: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  background-color: rgb(255 255 255);
+
+}
+  .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0.15rem solid #E6E6E6;
+    border-radius: 0.3rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-checkbox:checked {
+    background-color: #efb93b; 
+    border: 0.15rem solid #efb93b;
+    position: relative;
+  }
+  
+  .custom-checkbox:checked::after {
+    content: "✔"; 
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+.fixed-header {
+  position:sticky;
+  width: 100%;
+  background-color: #fff; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 5px;
+  padding: 14px 10px;
+}
+
+.dropdown-body {
+  position:sticky;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 5px;
+  padding: 0px 15px;
+  min-height: 100px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+.dropdown-parent{
+  width: 100%;
+  position: relative;
+  }
+  .text-dark{
+    color: #808080 !important;
+  }
+
+  .overview-table-container{
+    background-color: #fff;
+    padding: 1px ;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: calc(100vh - 151px);
+    overflow: auto !important;
+  }
+  .case-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+  }
+  
+  .case-table th,
+  .case-table td,
+  .case-table tr {
+    border: none !important;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .case-table th {
+    background-color: #efb93b;
+  }
+  
+  .btn-yes,
+  .btn-no {
+    margin-right: 5px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.view-casebtn{
+  background-color: #f4b836;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: none;
+}
+  .reject-cancle-btn{
+    background-color: #f44336;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+  }
+  .btn-no:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #524f4e;
+  }
+  
+   /* listing css */
+  .listingProfile-member{
+    padding: 10px 100px;
+  }
+
+  .listingProfile-member-p{
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+  }
+  .listingProfile-member-each{
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+  }
+  .profile-about-textarea-form{
+    width: 100%;
+    margin-bottom: 2px;
+    background-color: #ffffffcc;
+    padding: 10px;
+    border: 2px solid #CACED8;
+    color: #000000;
+    height: 120px;
+    outline: 0;
+    border-radius: 9px;
+    font-family: "Figtree", sans-serif;
+    cursor: pointer;
+  }
+  .profile-about-textarea-form:focus {
+    border: solid 2px #fee568 !important;
+    outline: 0;
+    box-shadow: none !important;
+  }
+.specialists-multiselect-div{
+  padding: 20px;
+  height: 220px;
+  overflow-y: auto;
+}
+.specialists-lable{
+  padding: 20px 20px 5px 20px;
+}
+
+@media (max-width: 768px) {
+ .listingProfile-member{
+    padding: 10px 65px;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+ .listingProfile-member{
+    padding: 10px 15px;
+  }
+}
+
+
+.listingProfile-member-p {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .listingProfile-member-p h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 1rem;
+  }
+
+  .jurisdiction-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+
+  .jurisdiction-btn {
+    padding: 0.75rem 1.25rem;
+    border: 2px solid #e9ecef;
+    background-color: #f0ede8;
+    color: #212529;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .jurisdiction-btn:hover {
+    background-color: #e8dfd5;
+    border-color: #F0E8E8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .jurisdiction-btn.active:hover {
+    background-color: #F0E8E8;
+    border-color: #c9935f;
+  }
+
+  @media (max-width: 576px) {
+    .jurisdiction-buttons {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+
+    .jurisdiction-btn {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .listingProfile-member-p h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+    @media (max-width: 560px) {
+    .jurisdiction-buttons {
+      grid-template-columns: 1fr;
+    }
+     .listingProfile-member-p{
+    padding: 7px;
+    
+  }
+    
+  }
+
+  @media (max-width: 360px) {
+    .jurisdiction-buttons {
+      grid-template-columns: 1fr;
+    }
+     .listingProfile-member-p{
+    padding: 7px;
+    
+  }
+    
+  }
+/* ═══════════════════════════════════════════════════════
+   Jurisdiction Search Bar  –  add these to profile.css
+   ═══════════════════════════════════════════════════════ */
+
+/* Wrapper */
+.jur-search-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Magnifier icon inside input */
+.jur-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: #aaa;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+.jur-search-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Input field */
+.jur-search-input {
+  width: 100%;
+  padding: 10px 36px 10px 38px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.jur-search-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.12);
+}
+.jur-search-input::placeholder {
+  color: #bbb;
+}
+
+/* Clear (×) button */
+.jur-search-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1;
+  padding: 2px 5px;
+  transition: color 0.15s;
+}
+.jur-search-clear:hover {
+  color: #555;
+}
+
+/* Dropdown panel */
+.jur-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-height: 260px;
+  overflow-y: auto;
+  z-index: 200;
+}
+
+/* Each row in dropdown */
+.jur-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background 0.1s;
+  border-bottom: 1px solid #f5f5f5;
+}
+.jur-dropdown-item:last-child {
+  border-bottom: none;
+}
+.jur-dropdown-item:hover {
+  background: #f7f9fc;
+}
+.jur-dropdown-item.jur-checked {
+  background: #eef4fd;
+}
+
+/* Search icon inside each row */
+.jur-item-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  color: #bbb;
+}
+
+/* Court / tribunal name */
+.jur-item-name {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Location hint */
+.jur-item-location {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Checkmark shown when selected */
+.jur-item-check {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  color: #4a90e2;
+}
+
+/* No-results message */
+.jur-no-results {
+  padding: 14px;
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+}
+
+/* ── Selected tag pills ───────────────────────────────── */
+.jur-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.jur-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #eef4fd;
+  color: #2b6cb0;
+  border: 1px solid #bee3f8;
+  border-radius: 20px;
+  padding: 3px 10px 3px 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.jur-tag-remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #2b6cb0;
+  font-size: 13px;
+  line-height: 1;
+  padding: 0;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+.jur-tag-remove:hover {
+  opacity: 1;
+}
+
+
+.template-img {
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 5px;
+  width: 120px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+}
+
+.template-img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+  position: relative;
+}
+.template-rows{
+padding-right: calc(var(--bs-gutter-x) * .0) !important;
+    padding-left: calc(var(--bs-gutter-x) * .0) !important;
+}

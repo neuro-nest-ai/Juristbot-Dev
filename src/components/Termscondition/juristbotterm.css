@@ -1,0 +1,161 @@
+
+
+.general1{
+  border: 1px solid rgb(244, 244, 244);
+  padding: 20px 13px;
+  box-shadow: rgba(159, 158, 158, 0.2) 0px 2px 8px 0px;
+  border-radius: 13px; 
+  color: #170F49;
+  margin: 0px 0px 0px 0px !important;
+  font-weight: 650px;
+  font-size: 18px;
+  font-family: "Figtree", sans-serif;
+}
+@media screen and (max-width: 480px) {
+  .general1{
+    border: 1px solid rgb(244, 244, 244);
+    padding: 15px 13px;
+    box-shadow: rgba(159, 158, 158, 0.2) 0px 2px 8px 0px;
+    border-radius: 13px; 
+    color: #170F49;
+    margin: 0px 0px 0px 0px !important;
+    font-weight: 650px;
+    font-size: 14px;
+    font-family: "Figtree", sans-serif;
+  }
+}
+
+.generalacardination1{
+ background-color: transparent;
+  border-bottom: 1px solid rgb(220, 219, 219) ;
+  padding: 12px ;
+  font-family: "Figtree", sans-serif;
+ 
+}
+
+.accadtext1{
+  margin: 0px 0px 0px 0px !important;
+  font-family: "Figtree", sans-serif;
+}
+.accadtext-body1 {
+  padding: 10px ;
+  background-color: #ffff;
+  font-family: "Figtree", sans-serif;
+}
+.chevron1 {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 6px 9px;
+  color:#170F49;
+  margin-top: 5px;
+  font-family: "Figtree", sans-serif;
+}
+
+.chevron1.rotate1 {  
+  padding: 5px;
+  color: #f6c00d;
+  margin-top: 5px;
+  font-family: "Figtree", sans-serif;
+}
+
+.chevronbutton1{
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+}
+@media screen and (max-width: 958px) {
+  .chevronbutton1{
+    text-align: end;
+    font-family: "Figtree", sans-serif;
+  }
+  .accordiondiv1{
+    background-color: #F7F7FB;
+    padding: 60px 25px;
+    border-radius: 15px;
+    font-family: "Figtree", sans-serif;
+  }
+}
+
+.accordiondiv1{
+  background-color: #F7F7FB;
+  padding: 80px 35px;
+  border-radius: 15px;
+  font-family: "Figtree", sans-serif;
+}
+@media screen and (max-width: 548px) {
+   
+    .accordiondiv1{
+      background-color: #F7F7FB;
+      padding: 25px 18px;
+      border-radius: 15px;
+      font-family: "Figtree", sans-serif;
+    }
+  }
+  
+  .snario-button {
+    padding: 12px;
+    background-color: #FFFFFF;
+    color:#6F6C90;
+    border: solid 1px #D9DBE9;
+    margin-right: 4px;
+    width: 200px;
+    border-radius: 8px;
+    font-family: "Figtree", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 548px) {
+   
+    .snario-button{
+      padding: 10px;
+      background-color: #FFFFFF;
+      color:#6F6C90;
+      border: solid 1px #D9DBE9;
+      margin-right: 4px;
+      width: 180px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: "Figtree", sans-serif;
+    }
+  }
+  .snario-button:active,
+  .snario-button:focus {
+    padding: 12px;
+    background-color: #FFC42B;
+    color: #FFFFFF;
+    border: none;
+    font-family: "Figtree", sans-serif;
+    margin-right: 4px;
+    width: 200px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+.accordion123{
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    font-family: "Figtree", sans-serif;
+}
+@media screen and (max-width: 548px) {
+  .accordion123{
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Figtree", sans-serif;
+}
+}
+.bttlink{
+text-decoration: none ;
+font-family: "Figtree", sans-serif;
+}
+.headtexthelps{
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(2, 1, 7);
+  font-family: "Figtree", sans-serif;
+}

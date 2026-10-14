@@ -1,0 +1,154 @@
+{
+  "highCourts": [
+    {
+      "id": 1,
+      "name": "Allahabad High Court",
+      "location": "Prayagraj, Uttar Pradesh",
+      "state": "Uttar Pradesh"
+    },
+    {
+      "id": 2,
+      "name": "Andhra Pradesh High Court",
+      "location": "Amaravati, Andhra Pradesh",
+      "state": "Andhra Pradesh"
+    },
+    {
+      "id": 3,
+      "name": "Bombay High Court",
+      "location": "Mumbai, Maharashtra",
+      "state": "Maharashtra"
+    },
+    {
+      "id": 4,
+      "name": "Calcutta High Court",
+      "location": "Kolkata, West Bengal",
+      "state": "West Bengal"
+    },
+    {
+      "id": 5,
+      "name": "Chhattisgarh High Court",
+      "location": "Bilaspur, Chhattisgarh",
+      "state": "Chhattisgarh"
+    },
+    {
+      "id": 6,
+      "name": "Delhi High Court",
+      "location": "New Delhi",
+      "state": "Delhi"
+    },
+    {
+      "id": 7,
+      "name": "Gauhati High Court",
+      "location": "Guwahati, Assam",
+      "state": "Assam"
+    },
+    {
+      "id": 8,
+      "name": "Gujarat High Court",
+      "location": "Ahmedabad, Gujarat",
+      "state": "Gujarat"
+    },
+    {
+      "id": 9,
+      "name": "Himachal Pradesh High Court",
+      "location": "Shimla, Himachal Pradesh",
+      "state": "Himachal Pradesh"
+    },
+    {
+      "id": 10,
+      "name": "High Court of Jammu & Kashmir and Ladakh",
+      "location": "Srinagar / Jammu",
+      "state": "Jammu & Kashmir and Ladakh"
+    },
+    {
+      "id": 11,
+      "name": "Jharkhand High Court",
+      "location": "Ranchi, Jharkhand",
+      "state": "Jharkhand"
+    },
+    {
+      "id": 12,
+      "name": "Karnataka High Court",
+      "location": "Bengaluru, Karnataka",
+      "state": "Karnataka"
+    },
+    {
+      "id": 13,
+      "name": "Kerala High Court",
+      "location": "Kochi, Kerala",
+      "state": "Kerala"
+    },
+    {
+      "id": 14,
+      "name": "Madhya Pradesh High Court",
+      "location": "Jabalpur, Madhya Pradesh",
+      "state": "Madhya Pradesh"
+    },
+    {
+      "id": 15,
+      "name": "Madras High Court",
+      "location": "Chennai, Tamil Nadu",
+      "state": "Tamil Nadu"
+    },
+    {
+      "id": 16,
+      "name": "Manipur High Court",
+      "location": "Imphal, Manipur",
+      "state": "Manipur"
+    },
+    {
+      "id": 17,
+      "name": "Meghalaya High Court",
+      "location": "Shillong, Meghalaya",
+      "state": "Meghalaya"
+    },
+    {
+      "id": 18,
+      "name": "Orissa High Court",
+      "location": "Cuttack, Odisha",
+      "state": "Odisha"
+    },
+    {
+      "id": 19,
+      "name": "Patna High Court",
+      "location": "Patna, Bihar",
+      "state": "Bihar"
+    },
+    {
+      "id": 20,
+      "name": "Punjab and Haryana High Court",
+      "location": "Chandigarh",
+      "state": "Punjab & Haryana"
+    },
+    {
+      "id": 21,
+      "name": "Rajasthan High Court",
+      "location": "Jodhpur, Rajasthan",
+      "state": "Rajasthan"
+    },
+    {
+      "id": 22,
+      "name": "Sikkim High Court",
+      "location": "Gangtok, Sikkim",
+      "state": "Sikkim"
+    },
+    {
+      "id": 23,
+      "name": "Telangana High Court",
+      "location": "Hyderabad, Telangana",
+      "state": "Telangana"
+    },
+    {
+      "id": 24,
+      "name": "Tripura High Court",
+      "location": "Agartala, Tripura",
+      "state": "Tripura"
+    },
+    {
+      "id": 25,
+      "name": "Uttarakhand High Court",
+      "location": "Nainital, Uttarakhand",
+      "state": "Uttarakhand"
+    }
+  ]
+}

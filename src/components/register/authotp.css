@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+.backimage5 {
+  background-image: url('../Assets/Reg.png');
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.authotitletxt {
+  font-family: "Figtree", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffff;
+
+}
+.container-fluid.backimage5 {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa; 
+}
+
+.otp-authicatediv {
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    background-color: #262626;
+    border: solid 2px #888888;
+}
+
+@media only screen and (max-width: 678px) {
+  .otp-authicatediv{
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.reglable {
+  font-family: "Figtree", sans-serif;
+
+}
+
+.autoticatebtn {
+  width: 100%;
+  padding: 8px;
+  font-family: "Figtree", sans-serif;
+  background-color: rgba(255, 196, 43, 1);
+  border: none;
+  font-weight: 700;
+  border-radius: 12px;
+  color:#0D0C0C;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.reg-form {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 2px;
+  background-color: #5E5E5ECC;
+  padding: 10px;
+  padding-left: 35px !important;
+  border: 1px solid #5E5E5ECC;
+  color: #ffffff;
+  border-radius: 12px;
+  font-family: "Figtree", sans-serif;
+} 
+
+
+@media only screen and (max-width: 678px) {
+  .reg-form {  
+    padding: 7px;
+    border-radius: 8px; 
+  } 
+  
+}
+
+
+  .regformbtns {
+    width: 100%; 
+    margin-top: 15px; 
+    max-width: 100%;
+  }
+
+
+.reg-form:focus {
+  border: solid 1px #fee568 !important;
+  outline: 0;
+  box-shadow: none !important;
+
+}
+
+
+.vertical-paperclip {
+  transform: rotate(180deg);
+}
+
+
+
+.input-container {
+  position: relative;
+}
+
+.input-container .faicons {
+  position: absolute;
+  left: 10px;
+  top: 48%;
+  transform: translateY(-50%);
+  color: #dddddd; 
+}
+
+
+                    

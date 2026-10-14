@@ -1,0 +1,163 @@
+{
+    "maindrafts": [
+      {
+        "id": 1,
+        "name": "Civil suits",
+        "subdrafts": [
+          "Partition suits",
+          "Declaration suits",
+          "Original suits",
+          "Appeal suits",
+          "Revision suits",
+          "Execution suits",
+          "Interpleader suits",
+          "Injunction suits",
+          "Possession suits",
+          "Redemption suits",
+          "Specific performance suits",
+          "Rescission suits",
+          "Cancellation Suits"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Family disputes",
+        "subdrafts": [
+          "Mutual divorce petition",
+          "Domestic violence petition",
+          "Hindu divorce petition",
+          "Maintenance petition",
+          "Guardianship petition",
+          "Indian divorce petition",
+          "Original suits"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Criminal cases",
+        "subdrafts": [
+          "Bail",
+          "Anticipatory bail",
+          "Return of property",
+          "Narcotics cases petition",
+          "Cybercrime cases petition",
+          "Sexual offence cases petition",
+          "Whitecollar crimes petition",
+          "Violent cases petition",
+          "Juvenile cases petition",
+          "Conspiracy cases petition",
+          "Forgery cases petition",
+          "Warrant recall petition",
+          "Surrender petition",
+          "Advances hearing petition",
+          "Sureties ship",
+          "Recall petition",
+          "Bomb blast petition"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Chit cases",
+        "subdrafts": [
+          "Chit petition"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Writ",
+        "subdrafts": [
+          "Habeas Corpus",
+          "Mandamus",
+          "Certiorari",
+          "Prohibition",
+          "Quo warranto",
+          "Injunction"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Commercial cases",
+        "subdrafts": [
+          "Transaction commercial",
+          "Contract petition",
+          "Chit petition"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Consumer cases",
+        "subdrafts": [
+          "Complaint",
+          "Revision petition",
+          "Impleadment petition",
+          "Withdrawal petition",
+          "Appeal petition"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Debts recovery tribunal",
+        "subdrafts": [
+          "Securitization application",
+          "Miscellaneous application",
+          "Original application",
+          "Transfer application",
+          "Interlocutory application",
+          "Administrative reforms commission"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Hindu religious and charitable endowments",
+        "subdrafts": [
+          "Original application",
+          "Miscellaneous application"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Labour cases",
+        "subdrafts": [
+          "Industrial disputes petition",
+          "Essential commodities",
+          "Wages disputes petition"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Vakalath",
+        "subdrafts": [
+          "Supreme Court",
+          "High Court",
+          "District Court",
+          "Sub Court",
+          "Munsif Court",
+          "Magistrate Court"
+        ]
+      },
+      {
+        "id": 12,
+        "name": "High courts petitions",
+        "subdrafts": [
+          "Appeal",
+          "Petition"
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Supreme courts petitions",
+        "subdrafts": [
+          "Appeal",
+          "Petition"
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Others",
+        "subdrafts": [
+          "Others"
+        ]
+      }
+    ]
+  }
+  

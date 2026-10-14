@@ -1,0 +1,1485 @@
+.legalreach-container {
+  width: 100%;
+  max-width: 100%;
+  background-image: url('./docs/legalhome.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.container-main-legalreach {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* extra space under the hero so the video card can overlap it */
+.lawyer-heading-top {
+  max-width: 1200px;
+  margin: 200px 0 260px !important;
+  padding: 0px 80px;
+  text-align: center;
+  font-family: 'Figtree', sans-serif;
+}
+
+.lr-hero-title {
+  font-size: 76px;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #101B3D;
+  margin: 0 0 22px;
+  letter-spacing: -0.5px;
+}
+
+.lr-hero-highlight {
+  display: block;
+  background: linear-gradient(90deg, #e0a93a 0%, #c8912c 60%, #b07a1f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lr-hero-text {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #3b3f52;
+  margin: 0 auto 28px;
+  max-width: 700px;
+}
+
+.lr-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 26px;
+  border-radius: 10px;
+  background: #fdf6e8;
+  border: 1px solid #f1dfb8;
+  color: #c47f12;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(196, 127, 18, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.lr-hero-btn:hover {
+  background: #fbeed3;
+  color: #a86a0a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(196, 127, 18, 0.25);
+}
+
+.lr-hero-btn-icon {
+  transition: transform 0.2s ease;
+}
+.lr-hero-btn:hover .lr-hero-btn-icon {
+  transform: translateX(3px);
+}
+
+/* ---------- VIDEO ---------- */
+.lr-video-wrap {
+  position: relative;
+  z-index: 2;
+  margin-top: -200px;
+  padding: 0 24px;
+  font-family: 'Figtree', sans-serif;
+}
+
+.lr-video-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fbf7ec;
+  border: 1px solid #f1e6cc;
+  border-radius: 22px;
+  padding: 18px 18px 22px;
+  box-shadow: 0 20px 50px rgba(176, 122, 31, 0.15);
+}
+
+.lr-video-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #101B3D;
+  margin-bottom: 14px;
+}
+.lr-video-label svg { color: #c8912c; }
+
+.lr-video-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #efe6d2;
+}
+
+.lr-video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.lr-video-thumb {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  background: none;
+}
+.lr-video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lr-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e0a93a, #b07a1f);
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+  box-shadow: 0 0 0 10px rgba(224, 169, 58, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.lr-video-thumb:hover .lr-play-btn {
+  transform: translate(-50%, -50%) scale(1.08);
+  box-shadow: 0 0 0 14px rgba(224, 169, 58, 0.3);
+}
+
+/* ---------- WHAT IS AI LEGAL RESEARCH ---------- */
+.lr-about {
+  padding: 80px 24px;
+  font-family: 'Figtree', sans-serif;
+}
+
+.lr-about-grid {
+  padding: 0px 150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.lr-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #c47f12;
+  margin-bottom: 8px;
+}
+
+.lr-about-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #101B3D;
+  margin: 0 0 18px;
+}
+
+.lr-about-text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #3b3f52;
+  margin: 0 0 28px;
+}
+
+.lr-quote {
+  display: flex;
+  gap: 14px;
+  padding-top: 18px;
+  border-top: 2px solid #e8cf9a;
+  max-width: 340px;
+}
+.lr-quote-icon {
+  color: #c8912c;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.lr-quote p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6b6f80;
+}
+
+.lr-benefits-card {
+  background: #fff;
+  border: 1px solid #f1e6cc;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 14px 40px rgba(16, 27, 61, 0.07);
+}
+
+.lr-benefits-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #101B3D;
+  margin: 0 0 22px;
+}
+
+.lr-benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lr-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.lr-benefit-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #fdf3dc;
+  color: #c8912c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 15px;
+}
+
+.lr-benefit h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #101B3D;
+  margin: 0 0 3px;
+}
+.lr-benefit p {
+  font-size: 13px;
+  color: #6b6f80;
+  margin: 0;
+}
+
+.vvv {
+  background-color: #ffffff !important;
+}
+
+/* ---------- AI LEGAL RESEARCH FOR INDIAN LAW ---------- */
+.lr-india {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1920 / 720;
+  background: #fdf9f1 url('./docs/indianlaw.jpg') center / cover no-repeat;
+  font-family: 'Figtree', sans-serif;
+  overflow: hidden;
+}
+
+.lr-india-content {
+  position: absolute;
+  left: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26%;
+  z-index: 2;
+}
+
+.lr-india-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #c47f12;
+  background: #fbefd6;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.lr-india-title {
+  font-size: clamp(28px, 2.6vw, 44px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #101B3D;
+  margin: 0 0 20px;
+}
+.lr-india-title span {
+  display: block;
+  background: linear-gradient(90deg, #c8912c, #9a6512);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lr-india-content p {
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: 1.7;
+  color: #000000;
+  margin: 0 0 14px;
+}
+
+.lr-india-tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lr-india-tag {
+  position: absolute;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  padding: 9px 16px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #f0e4c8;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(16, 27, 61, 0.08);
+  font-size: clamp(12px, 0.85vw, 15px);
+  font-weight: 500;
+  color: #101B3D;
+  z-index: 3;
+  animation: lrFloat 5s ease-in-out infinite;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.lr-india-tag:hover {
+  border-color: #e0a93a;
+  box-shadow: 0 10px 24px rgba(196, 127, 18, 0.2);
+}
+
+.lr-india-check {
+  color: #22a55a;
+  font-size: 14px;
+}
+
+@keyframes lrFloat {
+  0%, 100% { transform: translateY(-50%); }
+  50%      { transform: translateY(calc(-50% - 6px)); }
+}
+
+/* ---------- SEARCH CASE LAW FASTER ---------- */
+.lr-case {
+  padding: 50px 140px;
+  background: #ffffff;
+  font-family: 'Figtree', sans-serif;
+}
+
+.lr-case-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.lr-case-img {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(176, 122, 31, 0.12);
+}
+.lr-case-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 3.2;
+}
+
+.lr-case-title {
+  font-size: clamp(28px, 2.6vw, 44px);
+  font-weight: 600;
+  color: #101B3D;
+  margin: 0 0 24px;
+}
+.lr-case-title span {
+  background: linear-gradient(90deg, #c8912c, #9a6512);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lr-case-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3b3f52;
+  margin: 0 0 20px;
+}
+
+.lr-help-card {
+  position: relative;
+  z-index: 2;
+  margin: -40px auto 0;
+  margin-left: max(14px, calc((100% - 1300px) / 3 + 20px));
+  background: #ffffff;
+  border: 1.5px solid #f0d9a6;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  box-shadow: 0 16px 40px rgba(16, 27, 61, 0.06);
+}
+
+.lr-help-intro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 0 0 38%;
+  padding-right: 32px;
+  border-right: 1px solid #ece3d0;
+}
+
+.lr-help-brain {
+  border-radius: 50%;
+  background: radial-gradient(circle, #fdf3e3 0%, #faeede 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.lr-help-brain img { width: 52px; height: 52px; }
+
+.lr-help-intro h3 {
+  font-size: clamp(18px, 1.5vw, 24px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #101B3D;
+  margin: 0 0 8px;
+}
+.lr-help-intro p {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #3b3f52;
+  margin: 0;
+}
+
+.lr-help-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.lr-help-item {
+  background: #faf8f3;
+  border-radius: 12px;
+  padding: 18px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.lr-help-item:hover {
+  background: #fdf3dc;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(196, 127, 18, 0.12);
+}
+.lr-help-item img { width: 34px; height: 34px; }
+.lr-help-fa { font-size: 30px; color: #c8912c; }
+.lr-help-item span {
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #101B3D;
+}
+
+/* ---------- BENEFITS OF USING AN AI LEGAL RESEARCH TOOL ---------- */
+.lr-benefits-sec {
+  position: relative;
+  padding: 50px 7% 70px;
+  background: #fdf9f2 url('./docs/benefits-bg.jpg') center / cover no-repeat;
+  font-family: 'Figtree', sans-serif;
+}
+
+.lr-benefits-heading {
+  text-align: center;
+  font-size: clamp(26px, 2.6vw, 42px);
+  font-weight: 600;
+  color: #101B3D;
+  margin: 0 0 30px;
+}
+.lr-benefits-heading span {
+  background: linear-gradient(90deg, #d59a2c, #9a6512);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lr-bgrid {
+  width: 86%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 14px;
+}
+
+.lr-bcard {
+  position: relative;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #ece6da;
+  border-radius: 12px;
+  padding: 14px 18px 18px;
+  box-shadow: 0 8px 24px rgba(16, 27, 61, 0.05);
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+.lr-bcard:hover,
+.lr-bcard--featured {
+  background: #fdf8ef;
+  border-color: #f0cf8e;
+  box-shadow: 0 12px 30px rgba(196, 127, 18, 0.12);
+}
+.lr-bcard:hover { transform: translateY(-4px); }
+
+.lr-bcard--tall {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: center;
+  background:
+    linear-gradient(to bottom, #fdf8ef 0%, rgba(253, 248, 239, 0.95) 45%, rgba(253, 248, 239, 0.4) 75%, rgba(253, 248, 239, 0.1) 100%),
+    var(--card-img) center bottom / cover no-repeat;
+}
+.lr-bcard--tall:hover {
+  background:
+    linear-gradient(to bottom, #fdf8ef 0%, rgba(253, 248, 239, 0.95) 45%, rgba(253, 248, 239, 0.4) 75%, rgba(253, 248, 239, 0.1) 100%),
+    var(--card-img) center bottom / cover no-repeat;
+}
+.lr-bcard--tall h3 { margin: 14px 0 10px; }
+
+.lr-bcard-no {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  color: #9a9aa6;
+  margin-bottom: 10px;
+}
+.lr-bcard-no::after {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: #cfcfd6;
+}
+.lr-bcard--featured .lr-bcard-no { color: #c47f12; }
+.lr-bcard--featured .lr-bcard-no::after { background: #e0b25a; }
+.lr-no-purple { color: #8b3fbf; }
+.lr-no-green  { color: #22a55a; }
+
+.lr-bcard-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.lr-bcard-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+.lr-tone-gray   { background: #f1efeb; color: #7a7a86; }
+.lr-tone-purple { background: #f3eafa; color: #8b3fbf; }
+.lr-tone-green  { background: #e8f6ee; color: #22a55a; }
+.lr-tone-gold   { background: #fbeed3; color: #c47f12; }
+
+.lr-bcard h3 {
+  font-size: clamp(16px, 1.25vw, 20px);
+  font-weight: 600;
+  line-height: 1.25;
+  color: #101B3D;
+  margin: 0;
+}
+
+.lr-bcard p {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #3b3f52;
+  text-align: justify;
+  margin: 0 0 8px;
+}
+.lr-bcard p:last-child { margin-bottom: 0; }
+
+/* ---------- AI DOES NOT REPLACE LEGAL RESEARCH ---------- */
+.lr-compare {
+  padding: 70px 24px 90px;
+  background: #ffffff;
+  font-family: 'Figtree', sans-serif;
+}
+
+.lr-compare-head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 44px;
+}
+
+.lr-compare-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #9a9aa6;
+  margin-bottom: 12px;
+}
+
+.lr-compare-title {
+  font-size: clamp(26px, 2.6vw, 40px);
+  font-weight: 600;
+  line-height: 1.25;
+  color: #101B3D;
+  margin: 0 0 14px;
+}
+.lr-compare-title span {
+  display: block;
+  background: linear-gradient(90deg, #e0902a, #c8912c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lr-compare-sub {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6b6f80;
+  margin: 0;
+}
+
+.lr-compare-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.lr-compare-card {
+  border-radius: 16px;
+  padding: 28px 30px;
+  border: 1px solid #eee9df;
+  background: #fbfaf8;
+}
+.lr-compare-card--ai {
+  background: #fdf8ee;
+  border-color: #f0dfb4;
+}
+
+.lr-compare-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: clamp(17px, 1.4vw, 21px);
+  font-weight: 600;
+  color: #101B3D;
+  margin: 0 0 22px;
+}
+.lr-compare-card--ai h3 { color: #b47a12; }
+
+.lr-compare-ic {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.lr-compare-ic--gray { background: #efeef0; color: #6b6f80; }
+.lr-compare-ic--gold { background: #fbeed3; color: #c47f12; }
+
+.lr-compare-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lr-compare-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #3b3f52;
+}
+.lr-compare-card li img {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.lr-mark {
+  margin-top: 3px;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.lr-mark--x     { color: #e0563f; }
+.lr-mark--check { color: #22a55a; }
+
+/* ---------- WHO CAN USE JURISTBOT ---------- */
+.lr-audience {
+  position: relative;
+  padding: 70px 5% 90px;
+  background: #faf6ee url('./docs/legalreach.jpg') center / cover no-repeat;
+  font-family: 'Figtree', sans-serif;
+}
+
+.lr-audience-head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 44px;
+}
+
+.lr-audience-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #9a9aa6;
+  margin-bottom: 12px;
+}
+
+.lr-audience-title {
+  font-size: clamp(28px, 3vw, 44px);
+  font-weight: 600;
+  color: #101B3D;
+  margin: 0 0 12px;
+}
+.lr-audience-title span {
+  background: linear-gradient(90deg, #e0a93a, #b07a1f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lr-audience-sub {
+  font-size: 14px;
+  color: #6b6f80;
+  margin: 0;
+}
+
+.lr-audience-grid {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+}
+
+.lr-aud-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  padding: 26px 18px 24px;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(16, 27, 61, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.lr-aud-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 18px 40px rgba(196, 127, 18, 0.16);
+}
+
+.lr-aud-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #c8912c;
+  background: #fdf3dc;
+  border: 1px solid #f0dfb4;
+}
+
+.lr-aud-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #101B3D;
+  margin: 0 0 10px;
+}
+
+.lr-aud-card p {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #3b3f52;
+  margin: 0;
+}
+
+/* ---------- COMMON LEGAL RESEARCH TASKS ---------- */
+.lr-tasks {
+  position: relative;
+  padding: 60px 7% 90px;
+  background: #faf1de url('./docs/reachtask.jpg') right bottom / cover no-repeat;
+  font-family: 'Figtree', sans-serif;
+  overflow: hidden;
+}
+
+.lr-tasks-inner {
+  max-width: 760px;
+}
+
+.lr-tasks-title {
+  font-size: clamp(26px, 2.6vw, 40px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #101B3D;
+  margin: 0 0 18px;
+}
+.lr-tasks-title span {
+  display: block;
+  background: linear-gradient(90deg, #e0a93a, #b07a1f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lr-tasks-sub {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6b6f80;
+  max-width: 520px;
+  margin: 0 0 30px;
+}
+
+.lr-tasks-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 40px;
+  max-width: 720px;
+}
+
+.lr-task-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #3b3f52;
+}
+
+.lr-task-tick {
+  color: #c8912c;
+  font-size: 16px;
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+
+.lr-tasks-note {
+  position: absolute;
+  top: 60px;
+  right: 7%;
+  width: 360px;
+  background: #fdf6e8;
+  border: 1px solid #f0dfb4;
+  border-radius: 12px;
+  padding: 16px 18px;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #b47a12;
+  box-shadow: 0 10px 28px rgba(196, 127, 18, 0.12);
+  z-index: 2;
+}
+
+/* ---------- WHY USE JURISTBOT ---------- */
+.lr-why {
+  background: #ffffff;
+  padding: 0 24px 80px;
+  font-family: 'Figtree', sans-serif;
+}
+
+.lr-why-card {
+  margin: -20px auto 0;
+  position: relative;
+  z-index: 3;
+  background: #ffffff;
+  border: 1px solid #f1e6cc;
+  border-radius: 22px;
+  padding: 48px 60px;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(16, 27, 61, 0.10);
+}
+
+.lr-why-title {
+  font-size: clamp(24px, 2.4vw, 36px);
+  font-weight: 700;
+  color: #101B3D;
+  margin: 0 0 24px;
+}
+.lr-why-title span {
+  background: linear-gradient(90deg, #e0a93a, #b07a1f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lr-why-text {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #3b3f52;
+  max-width: 720px;
+  margin: 0 auto 18px;
+}
+
+.lr-why-subhead {
+  font-size: 17px;
+  font-weight: 600;
+  color: #c47f12;
+  margin: 28px 0 18px;
+}
+
+.lr-why-areas {
+  list-style: none;
+  margin: 0 auto 24px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 10px 60px;
+  max-width: 560px;
+  text-align: left;
+}
+.lr-why-areas li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 14px;
+  color: #101B3D;
+}
+.lr-why-areas li::before {
+  content: "•";
+  position: absolute;
+  left: 4px;
+  color: #c8912c;
+}
+.lr-why-areas-full {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding-left: 0 !important;
+}
+.lr-why-areas-full::before { display: none; }
+
+/* ---------- FAQ ---------- */
+.lr-faq {
+  position: relative;
+  padding: 60px 24px 90px;
+  background: #fdf6ea url('./docs/faqback.jpg') center / cover no-repeat;
+  font-family: 'Figtree', sans-serif;
+}
+
+.lr-faq-head {
+  text-align: center;
+  margin: 0 auto 36px;
+}
+
+.lr-faq-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #8a8a96;
+  margin-bottom: 8px;
+}
+
+.lr-faq-title {
+  font-size: clamp(28px, 3vw, 46px);
+  font-weight: 700;
+  color: #b47a12;
+  margin: 0;
+}
+.lr-faq-title span {
+  color: #101B3D;
+}
+
+.lr-faq-card {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(240, 223, 180, 0.6);
+  border-radius: 20px;
+  padding: 34px;
+  box-shadow: 0 20px 50px rgba(16, 27, 61, 0.06);
+}
+
+.lr-faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+  align-items: start;
+}
+
+.lr-faq-item {
+  background: #f4f5f7;
+  border: 1px solid #eceef1;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.lr-faq-item.open {
+  background: #fdf8ef;
+  border-color: #f0dfb4;
+  box-shadow: 0 8px 22px rgba(196, 127, 18, 0.10);
+}
+
+.lr-faq-q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 18px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3b3f52;
+  font-family: inherit;
+}
+.lr-faq-item.open .lr-faq-q { color: #101B3D; }
+
+.lr-faq-ic {
+  font-size: 14px;
+  color: #8a8a96;
+  flex-shrink: 0;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+.lr-faq-item.open .lr-faq-ic {
+  color: #c47f12;
+  transform: rotate(90deg);
+}
+
+.lr-faq-a {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+.lr-faq-item.open .lr-faq-a {
+  grid-template-rows: 1fr;
+}
+.lr-faq-a p {
+  overflow: hidden;
+  margin: 0;
+  padding: 0 18px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #6b6f80;
+  transition: padding 0.3s ease;
+}
+.lr-faq-item.open .lr-faq-a p {
+  padding: 0 18px 16px;
+}
+
+/* ---------- FINAL CTA BANNER ---------- */
+.lr-cta {
+  padding: 40px 24px 40px;
+  background: #ffffff;
+  font-family: 'Figtree', sans-serif;
+}
+
+.lr-cta-banner {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 34px 48px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: linear-gradient(100deg, #f0a01e 0%, #f5b02f 55%, #f8c250 100%);
+  box-shadow: 0 18px 44px rgba(240, 160, 30, 0.25);
+}
+
+.lr-cta-content {
+  z-index: 2;
+}
+
+.lr-cta-title {
+  font-size: clamp(24px, 2.4vw, 34px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+
+.lr-cta-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0;
+  max-width: 520px;
+}
+
+.lr-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 12px 26px;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #e0902a;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  z-index: 2;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.lr-cta-btn:hover {
+  transform: translateY(-2px);
+  color: #c47f12;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
+}
+.lr-cta-btn svg { transition: transform 0.2s ease; }
+.lr-cta-btn:hover svg { transform: translateX(3px); }
+
+
+/* =====================================================================
+   RESPONSIVE — desktop (1440px+) is untouched; everything below only
+   applies to laptop, tablet and mobile widths.
+   ===================================================================== */
+
+/* ---------- LAPTOP (1200px – 1439px) ---------- */
+@media (max-width: 1439px) {
+  /* hero */
+  .lawyer-heading-top { margin: 170px 0 240px !important; padding: 0 60px; }
+  .lr-hero-title { font-size: 62px; }
+  .lr-hero-text { font-size: 18px; }
+
+  /* about */
+  .lr-about { padding: 70px 24px; }
+  .lr-about-grid { padding: 0 70px; gap: 48px; }
+
+  /* indian law — keep floating chips, tighten text so it fits the banner */
+  .lr-india-content { left: 5%; width: 29%; }
+  .lr-india-title { font-size: clamp(26px, 2.4vw, 36px); margin-bottom: 14px; }
+  .lr-india-content p { font-size: 13.5px; line-height: 1.6; margin-bottom: 10px; }
+  .lr-india-tag { padding: 7px 12px; gap: 8px; font-size: 12px; }
+  .lr-india-check { width: 14px; height: 14px; }
+
+  /* case law */
+  .lr-case { padding: 50px 70px; }
+  .lr-case-grid { gap: 44px; }
+  .lr-case-content p { font-size: 15px; margin-bottom: 16px; }
+  .lr-help-card { margin-left: 14px; gap: 24px; }
+  .lr-help-intro { padding-right: 24px; }
+  .lr-help-list { gap: 12px; }
+  .lr-help-item span { font-size: 12px; }
+
+  /* benefits */
+  .lr-benefits-sec { padding: 50px 5% 60px; }
+  .lr-bgrid { width: 90%; }
+
+  /* audience: 6 cards too narrow → 3 per row */
+  .lr-audience { padding: 60px 5% 80px; }
+  .lr-audience-grid { grid-template-columns: repeat(3, 1fr); max-width: 1100px; }
+
+  /* tasks */
+  .lr-tasks { padding: 60px 5% 90px; }
+  .lr-tasks-inner { max-width: 640px; }
+  .lr-tasks-list { gap: 14px 28px; }
+  .lr-tasks-note { right: 5%; width: 300px; }
+
+  /* faq */
+  .lr-faq-card { padding: 28px; }
+}
+
+/* ---------- SMALL LAPTOP (992px – 1199px) ---------- */
+@media (max-width: 1199px) {
+  /* hero */
+  .lawyer-heading-top { margin: 150px 0 220px !important; padding: 0 40px; }
+  .lr-hero-title { font-size: 54px; }
+  .lr-hero-text { font-size: 17px; }
+
+  /* about */
+  .lr-about-grid { padding: 0 24px; gap: 36px; }
+
+  /* indian law — no room for floating chips, stack them */
+  .lr-india {
+    aspect-ratio: auto;
+    padding: 60px 40px 320px;
+    background-position: 65% bottom;
+    background-size: auto 380px;
+  }
+  .lr-india-content {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 640px;
+    left: auto;
+  }
+  .lr-india-content p { font-size: 15px; line-height: 1.7; }
+  .lr-india-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    max-width: 680px;
+  }
+  .lr-india-tag {
+    position: static;
+    transform: none;
+    animation: none;
+    white-space: normal;
+    font-size: 13px;
+  }
+
+  /* case law */
+  .lr-case { padding: 50px 40px; }
+  .lr-help-card {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 32px auto 0;
+    padding: 24px;
+  }
+  .lr-help-intro {
+    flex: none;
+    padding-right: 0;
+    padding-bottom: 20px;
+    border-right: 0;
+    border-bottom: 1px solid #ece3d0;
+  }
+
+  /* benefits */
+  .lr-benefits-sec { background-position: right bottom; }
+  .lr-bgrid { width: 100%; grid-template-columns: 1fr 1fr; }
+  .lr-bcard--tall {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    min-height: 0;
+  }
+  .lr-bcard p { font-size: 14px; }
+
+  /* tasks: note moves under the list */
+  .lr-tasks { padding: 60px 40px 70px; }
+  .lr-tasks-inner { max-width: 720px; }
+  .lr-tasks-note {
+    position: static;
+    width: 100%;
+    max-width: 560px;
+    margin: 28px 0 0;
+  }
+
+  /* why */
+  .lr-why-card { padding: 40px 40px; }
+}
+
+/* ---------- TABLET (768px – 991px) ---------- */
+@media (max-width: 991px) {
+  .container-main-legalreach { padding: 15px 24px; }
+  .legalreach-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.65);
+    z-index: -1;
+  }
+
+  /* hero + video */
+  .lawyer-heading-top { margin: 120px 0 190px !important; padding: 0; }
+  .lr-hero-title { font-size: 46px; }
+  .lr-hero-text { font-size: 16px; }
+  .lr-video-wrap { margin-top: -150px; }
+
+  /* about */
+  .lr-about { padding: 60px 24px; }
+  .lr-about-grid { grid-template-columns: 1fr; gap: 36px; padding: 0; }
+  .lr-quote { max-width: 100%; }
+
+  /* indian law */
+  .lr-india { padding: 50px 24px 320px; }
+
+  /* case law */
+  .lr-case { padding: 50px 24px; }
+  .lr-case-grid { grid-template-columns: 1fr; gap: 32px; }
+  .lr-case-img { max-width: 560px; margin: 0 auto; width: 100%; border-radius: 20px; }
+  .lr-help-list { grid-template-columns: repeat(3, 1fr); }
+
+  /* benefits */
+  .lr-benefits-sec { padding: 50px 24px 60px; }
+
+  /* compare */
+  .lr-compare { padding: 60px 24px 70px; }
+  .lr-compare-grid { gap: 20px; }
+  .lr-compare-card { padding: 24px; }
+
+  /* audience */
+  .lr-audience { padding: 50px 24px 60px; }
+  .lr-audience-grid { gap: 14px; }
+
+  /* tasks */
+  .lr-tasks { padding: 50px 24px 60px; background-size: auto 300px; }
+
+  /* why */
+  .lr-why { padding: 0 24px 60px; }
+  .lr-why-card { padding: 36px 28px; }
+
+  /* faq */
+  .lr-faq { padding: 50px 24px 70px; }
+  .lr-faq-card { padding: 22px; }
+  .lr-faq-grid { gap: 12px 16px; }
+
+  /* cta */
+  .lr-cta { padding: 30px 24px 50px; }
+  .lr-cta-banner { padding: 30px 32px; }
+}
+
+/* ---------- LARGE MOBILE (576px – 767px) ---------- */
+@media (max-width: 767px) {
+  .lr-hero-title { font-size: 40px; }
+
+  .lr-bgrid { grid-template-columns: 1fr; }
+  .lr-bcard { padding: 18px; }
+
+  .lr-compare-grid { grid-template-columns: 1fr; gap: 18px; }
+  .lr-compare-card { padding: 22px; }
+
+  .lr-audience-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+
+  .lr-tasks-list { grid-template-columns: 1fr; gap: 12px; }
+
+  .lr-why-areas { grid-template-columns: 1fr; gap: 8px; max-width: 320px; }
+
+  .lr-faq-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  .lr-cta-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 22px;
+    gap: 20px;
+  }
+  .lr-cta-title { font-size: 24px; }
+  .lr-cta-title br { display: none; }
+  .lr-cta-btn { width: 100%; justify-content: center; }
+}
+
+/* ---------- MOBILE (≤ 575px) ---------- */
+@media (max-width: 575px) {
+  .container-main-legalreach { padding: 15px 16px; }
+
+  /* hero + video */
+  .lawyer-heading-top { margin: 96px 0 130px !important; padding: 0; }
+  .lr-hero-title { font-size: 34px; letter-spacing: -0.3px; margin-bottom: 16px; }
+  .lr-hero-text { font-size: 15px; line-height: 1.6; margin-bottom: 22px; }
+  .lr-hero-btn { width: 100%; justify-content: center; padding: 12px 18px; }
+
+  .lr-video-wrap { margin-top: -95px; padding: 0 16px; }
+  .lr-video-card { padding: 12px 12px 14px; border-radius: 16px; }
+  .lr-video-label { font-size: 13px; margin-bottom: 10px; }
+  .lr-video-frame { border-radius: 10px; }
+  .lr-play-btn { width: 56px; height: 56px; font-size: 18px; box-shadow: 0 0 0 8px rgba(224, 169, 58, 0.25); }
+
+  /* about */
+  .lr-about { padding: 50px 16px; }
+  .lr-about-title { font-size: 28px; }
+  .lr-about-text { font-size: 15px; line-height: 1.7; }
+  .lr-benefits-card { padding: 22px 18px; }
+
+  /* indian law */
+  .lr-india { padding: 44px 16px 250px; background-size: auto 260px; }
+  .lr-india-content p { font-size: 14px; }
+  .lr-india-tag { padding: 8px 12px; font-size: 12.5px; }
+
+  /* case law */
+  .lr-case { padding: 44px 16px; }
+  .lr-case-content p { font-size: 14.5px; }
+  .lr-help-card { padding: 20px 16px; border-radius: 16px; }
+  .lr-help-intro { flex-direction: column; text-align: center; gap: 12px; }
+  .lr-help-list { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .lr-help-item { padding: 14px 8px; }
+  .lr-help-item:last-child { grid-column: 1 / -1; }
+
+  /* benefits */
+  .lr-benefits-sec { padding: 44px 16px 50px; }
+  .lr-benefits-heading { margin-bottom: 22px; }
+  .lr-bcard p { font-size: 13.5px; text-align: left; }
+
+  /* compare */
+  .lr-compare { padding: 44px 16px 50px; }
+  .lr-compare-head { margin-bottom: 28px; }
+  .lr-compare-card { padding: 20px 16px; }
+  .lr-compare-card li { font-size: 13.5px; }
+
+  /* audience */
+  .lr-audience { padding: 44px 16px 50px; }
+  .lr-audience-head { margin-bottom: 28px; }
+  .lr-aud-card { padding: 20px 14px; }
+
+  /* tasks */
+  .lr-tasks { padding: 44px 16px 50px; background-size: auto 220px; }
+  .lr-task-item { font-size: 13.5px; }
+
+  /* why */
+  .lr-why { padding: 0 16px 50px; }
+  .lr-why-card { padding: 28px 18px; border-radius: 18px; }
+  .lr-why-text { font-size: 14px; }
+
+  /* faq */
+  .lr-faq { padding: 44px 16px 50px; }
+  .lr-faq-card { padding: 14px; border-radius: 16px; }
+  .lr-faq-q { padding: 13px 14px; font-size: 13.5px; }
+  .lr-faq-a p { padding: 0 14px; }
+  .lr-faq-item.open .lr-faq-a p { padding: 0 14px 14px; }
+
+  /* cta */
+  .lr-cta { padding: 24px 16px 44px; }
+}
+
+/* ---------- SMALL MOBILE (≤ 420px) ---------- */
+@media (max-width: 420px) {
+  .lr-hero-title { font-size: 30px; }
+  .lr-audience-grid { grid-template-columns: 1fr; }
+  .lr-help-list { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---------- TOUCH DEVICES: no lift-on-hover jump ---------- */
+@media (hover: none) {
+  .lr-hero-btn:hover,
+  .lr-bcard:hover,
+  .lr-aud-card:hover,
+  .lr-help-item:hover,
+  .lr-cta-btn:hover { transform: none; }
+}

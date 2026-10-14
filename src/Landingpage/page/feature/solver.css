@@ -1,0 +1,775 @@
+.jd-container {
+  width: 100%;
+  max-width: 100%;
+  background-image: url('./docs/scbackimg.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.container-main-jd-solver {
+  padding: 160px 140px 100px;
+}
+/* ---------- HERO ---------- */
+.jd-hero {
+  max-width: 660px;
+  font-family: 'Figtree', sans-serif;
+  margin-top: 90px;
+}
+
+.jd-hero-title {
+  font-size: clamp(36px, 4vw, 60px);
+  font-weight: 700;
+  line-height: 1.12;
+  color: #101B3D;
+  margin: 0 0 24px;
+  letter-spacing: -0.5px;
+}
+
+.jd-hero-highlight {
+  display: block;
+  background: linear-gradient(90deg, #e0a93a 0%, #c8912c 60%, #b07a1f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.jd-hero-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #3b3f52;
+  margin: 0 0 16px;
+}
+
+.jd-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 12px 26px;
+  border-radius: 10px;
+  background: #fdf6e8;
+  border: 1px solid #f1dfb8;
+  color: #c47f12;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(196, 127, 18, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.jd-hero-btn:hover {
+  background: #fbeed3;
+  color: #a86a0a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(196, 127, 18, 0.25);
+}
+.jd-hero-btn-icon { transition: transform 0.2s ease; }
+.jd-hero-btn:hover .jd-hero-btn-icon { transform: translateX(3px); }
+
+
+/* ---------- WHAT IS AI LEGAL CASE ANALYSIS ---------- */
+.jd-about {
+  padding: 50px 140px;
+  background: #ffffff !important;
+  font-family: 'Figtree', sans-serif;
+}
+
+.jd-about-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.jd-about-img {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.jd-about-img img {
+  width: 350px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3 / 3.4;
+}
+
+.jd-about-title {
+  font-size: clamp(28px, 2.8vw, 44px);
+  font-weight: 700;
+  color: #101B3D;
+  margin: 0 0 24px;
+}
+.jd-about-title span {
+  background: linear-gradient(90deg, #e0a93a, #b07a1f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.jd-about-text p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #3F3B3B;
+  margin: 0 0 14px;
+}
+.jd-about-text p:last-child { margin-bottom: 0; }
+
+
+/* ---------- ANALYZE LEGAL SCENARIOS ---------- */
+.jd-analyze {
+  position: relative;
+  padding: 60px 140px;
+  background: #fdf3e0 url('./docs/scanalyze.jpg') right center / cover no-repeat;
+  font-family: 'Figtree', sans-serif;
+}
+
+.jd-analyze-inner {
+  max-width: 660px;
+}
+
+.jd-analyze-title {
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #101B3D;
+  margin: 0 0 14px;
+}
+.jd-analyze-title span {
+  background: linear-gradient(90deg, #e0a93a, #c8912c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.jd-analyze-sub {
+  font-size: 14px;
+  color: #514F4F;
+  margin: 0 0 20px;
+}
+
+.jd-analyze-list {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.jd-analyze-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #3b3f52;
+}
+.jd-analyze-star {
+  color: #e0a93a;
+  font-size: 13px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.jd-analyze-text {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #514F4F;
+  margin: 0 0 14px;
+  max-width: 580px;
+}
+.jd-analyze-text:last-child { margin-bottom: 0; }
+
+
+/* ---------- SUPPORT CASE PREPARATION ---------- */
+.jd-support {
+  padding: 60px 140px 50px;
+  background: #ffffff;
+  font-family: 'Figtree', sans-serif;
+}
+
+.jd-support-head {
+  text-align: center;
+  margin: 0 auto 40px;
+}
+.jd-support-title {
+  font-size: clamp(26px, 2.8vw, 42px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #101B3D;
+  margin: 0;
+}
+.jd-support-title span {
+  display: block;
+  background: linear-gradient(90deg, #e0a93a, #c8912c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.jd-support-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.jd-support-card {
+  background: #ffffff;
+  border: 1px solid #eef0f3;
+  border-radius: 12px;
+  padding: 16px 18px 20px;
+  box-shadow: 0 8px 24px rgba(16, 27, 61, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.jd-support-card:hover {
+  transform: translateY(-4px);
+  border-color: #f0cf8e;
+  box-shadow: 0 12px 30px rgba(196, 127, 18, 0.12);
+}
+
+.jd-support-no {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #c47f12;
+  margin-bottom: 12px;
+}
+.jd-support-no::after {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: #e0b25a;
+}
+
+.jd-support-cardhead {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.jd-support-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: #fdf3dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.jd-support-icon img { width: 16px; height: 16px; }
+
+.jd-support-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #101B3D;
+  margin: 0;
+}
+.jd-support-card p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #6b6f80;
+  margin: 0;
+}
+
+/* ---------- WHO CAN USE (SCENARIO SOLVER) ---------- */
+.jd-audience {
+  padding: 40px 140px 80px;
+  background: #ffffff;
+  font-family: 'Figtree', sans-serif;
+}
+
+.jd-audience-head {
+  text-align: center;
+  margin: 0 auto 44px;
+}
+.jd-audience-title {
+  font-size: clamp(26px, 3vw, 44px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #101B3D;
+  margin: 0;
+}
+.jd-audience-title span {
+  display: block;
+  color: #e0a93a;
+}
+
+.jd-audience-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.jd-aud-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #eef0f3;
+  border-radius: 16px;
+  padding: 22px 18px 26px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(16, 27, 61, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.jd-aud-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 34px rgba(16, 27, 61, 0.10);
+}
+
+.jd-aud-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+.jd-aud-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #101B3D;
+  margin: 0 0 10px;
+}
+.jd-aud-line {
+  display: block;
+  width: 34px;
+  height: 3px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+.jd-aud-card p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #6b6f80;
+  margin: 0;
+}
+
+.jd-aud-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 26px;
+}
+
+.jd-aud-card--indigo .jd-aud-icon { background: linear-gradient(135deg, #5b6ef5, #3b4fd8); }
+.jd-aud-card--indigo .jd-aud-line { background: #5b6ef5; }
+.jd-aud-card--indigo::after { background: linear-gradient(to top, rgba(91,110,245,0.35), transparent); }
+
+.jd-aud-card--teal .jd-aud-icon { background: linear-gradient(135deg, #17c0c0, #0f9b91); }
+.jd-aud-card--teal .jd-aud-line { background: #17c0c0; }
+.jd-aud-card--teal::after { background: linear-gradient(to top, rgba(23,192,192,0.35), transparent); }
+
+.jd-aud-card--pink .jd-aud-icon { background: linear-gradient(135deg, #f0329b, #d61f83); }
+.jd-aud-card--pink .jd-aud-line { background: #f0329b; }
+.jd-aud-card--pink::after { background: linear-gradient(to top, rgba(240,50,155,0.35), transparent); }
+
+.jd-aud-card--blue .jd-aud-icon { background: linear-gradient(135deg, #33a8f0, #1f8bd6); }
+.jd-aud-card--blue .jd-aud-line { background: #33a8f0; }
+.jd-aud-card--blue::after { background: linear-gradient(to top, rgba(51,168,240,0.35), transparent); }
+
+
+/* ---------- TOOLS + FAQ ---------- */
+.jd-toolsfaq {
+  padding: 40px 140px;
+  background: #ffffff;
+  font-family: 'Figtree', sans-serif;
+}
+
+.jd-toolsfaq-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.jd-tools-title {
+  font-size: clamp(26px, 2.6vw, 40px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #101B3D;
+  margin: 0 0 14px;
+}
+.jd-tools-title span { color: #e0a93a; }
+
+.jd-tools-sub {
+  font-size: 13.5px;
+  color: #6b6f80;
+  margin: 0 0 6px;
+}
+.jd-tools-flow {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #101B3D;
+  margin: 0 0 18px;
+}
+
+.jd-tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.jd-tool-card {
+  position: relative;
+  border-radius: 14px;
+  padding: 18px;
+  overflow: hidden;
+}
+.jd-tool-no {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(16, 27, 61, 0.35);
+}
+.jd-tool-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+.jd-tool-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #101B3D;
+  margin: 0 0 6px;
+}
+.jd-tool-card p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #514F4F;
+  margin: 0;
+}
+
+.jd-tool-card--indigo { background: #eef0fe; }
+.jd-tool-card--indigo .jd-tool-icon { background: linear-gradient(135deg, #5b6ef5, #3b4fd8); }
+.jd-tool-card--green  { background: #e9f7ee; }
+.jd-tool-card--green  .jd-tool-icon { background: linear-gradient(135deg, #2ec76a, #1f9a55); }
+.jd-tool-card--purple { background: #f5ecfd; }
+.jd-tool-card--purple .jd-tool-icon { background: linear-gradient(135deg, #a24ff0, #8b3fbf); }
+.jd-tool-card--gold   { background: #fdf3dc; }
+.jd-tool-card--gold   .jd-tool-icon { background: linear-gradient(135deg, #e0a93a, #c8912c); }
+
+.jd-tools-note {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #6b6f80;
+  margin: 0;
+}
+
+.jd-faq-card {
+  background: #ffffff;
+  border: 1px solid #f2e6cd;
+  border-radius: 18px;
+  padding: 28px 30px;
+  box-shadow: 0 16px 40px rgba(16, 27, 61, 0.05);
+}
+.jd-faq-title {
+  text-align: center;
+  font-size: clamp(28px, 3vw, 44px);
+  font-weight: 700;
+  color: #e0a93a;
+  margin: 0 0 24px;
+}
+
+.jd-faq-list { display: flex; flex-direction: column; gap: 12px; }
+
+.jd-faq-item {
+  background: #f4f5f7;
+  border: 1px solid #eceef1;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+.jd-faq-item.open {
+  background: #fff;
+  border-color: #f0dfb4;
+}
+
+.jd-faq-q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3b3f52;
+  font-family: inherit;
+}
+.jd-faq-item.open .jd-faq-q { color: #c47f12; }
+.jd-faq-ic { font-size: 13px; color: #8a8a96; flex-shrink: 0; }
+.jd-faq-item.open .jd-faq-ic { color: #c47f12; }
+
+.jd-faq-a {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+.jd-faq-item.open .jd-faq-a { grid-template-rows: 1fr; }
+.jd-faq-a p {
+  overflow: hidden;
+  margin: 0;
+  padding: 0 18px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #6b6f80;
+  transition: padding 0.3s ease;
+}
+.jd-faq-item.open .jd-faq-a p { padding: 0 18px 14px; }
+
+
+/* ---------- FINAL CTA BANNER ---------- */
+.jd-cta {
+  padding: 20px 140px 80px;
+  background: #ffffff;
+  font-family: 'Figtree', sans-serif;
+}
+
+.jd-cta-banner {
+  border-radius: 16px;
+  padding: 40px 48px;
+  background:
+    linear-gradient(90deg, #8a7d7d 0%, #9a8d8a 55%, rgba(154,141,138,0.4) 100%),
+    url('./docs/scctaimg.jpg') right center / cover no-repeat;
+  background-color: #8a7d7d;
+  box-shadow: 0 14px 36px rgba(16, 27, 61, 0.15);
+}
+
+.jd-cta-content { max-width: 560px; }
+
+.jd-cta-title {
+  font-size: clamp(24px, 2.6vw, 36px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 0 14px;
+}
+.jd-cta-title span { color: #f0a92e; }
+
+.jd-cta-lead {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 8px;
+}
+.jd-cta-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 22px;
+  max-width: 480px;
+}
+
+.jd-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 24px;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #e0a93a, #c8912c);
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(196, 127, 18, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.jd-cta-btn:hover { transform: translateY(-2px); }
+.jd-cta-btn svg { transition: transform 0.2s ease; }
+.jd-cta-btn:hover svg { transform: translateX(3px); }
+
+
+/* =====================================================================
+   RESPONSIVE — desktop (1440px+) is untouched; everything below only
+   applies to laptop, tablet and mobile widths.
+   ===================================================================== */
+
+/* ---------- LAPTOP (1200px – 1439px) ---------- */
+@media (max-width: 1439px) {
+  .container-main-jd-solver { padding: 130px 80px 80px; }
+  .jd-hero { margin-top: 60px; }
+
+  .jd-about,
+  .jd-analyze,
+  .jd-support,
+  .jd-audience,
+  .jd-toolsfaq,
+  .jd-cta {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .jd-about-grid { gap: 48px; }
+  .jd-toolsfaq-grid { gap: 36px; }
+}
+
+/* ---------- SMALL LAPTOP (992px – 1199px) ---------- */
+@media (max-width: 1199px) {
+  .container-main-jd-solver { padding: 120px 48px 70px; }
+  .jd-hero { margin-top: 40px; max-width: 600px; }
+
+  .jd-about,
+  .jd-analyze,
+  .jd-support,
+  .jd-audience,
+  .jd-toolsfaq,
+  .jd-cta {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .jd-about-grid { grid-template-columns: 0.9fr 1.1fr; gap: 40px; }
+  .jd-about-img img { width: 100%; }
+  .jd-about-text p { font-size: 15px; }
+
+  .jd-analyze-inner { max-width: 560px; }
+
+  .jd-support-grid,
+  .jd-audience-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .jd-toolsfaq-grid { gap: 30px; }
+  .jd-faq-card { padding: 24px 22px; }
+  .jd-tool-card { padding: 16px; }
+}
+
+/* ---------- TABLET (768px – 991px) ---------- */
+@media (max-width: 991px) {
+  .jd-container { background-position: 70% top; }
+  .container-main-jd-solver { padding: 110px 24px 60px; }
+
+  .jd-hero {
+    margin-top: 20px;
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 14px;
+    padding: 28px 24px;
+  }
+
+  .jd-about { padding: 50px 24px; }
+  .jd-about-grid { grid-template-columns: 1fr; gap: 28px; }
+  .jd-about-img { width: 100%; max-width: 360px; margin: 0 auto; }
+  .jd-about-img img { width: 100%; }
+
+  .jd-analyze {
+    padding: 50px 24px 340px;
+    background-size: auto 300px;
+    background-position: right bottom;
+  }
+  .jd-analyze-inner { max-width: 100%; }
+  .jd-analyze-text { max-width: 100%; }
+
+  .jd-support { padding: 50px 24px 40px; }
+  .jd-support-grid { gap: 16px; }
+
+  .jd-audience { padding: 30px 24px 60px; }
+
+  .jd-toolsfaq { padding: 30px 24px 50px; }
+  .jd-toolsfaq-grid { grid-template-columns: 1fr; gap: 36px; }
+
+  .jd-cta { padding: 10px 24px 60px; }
+  .jd-cta-banner { padding: 34px 32px; }
+}
+
+/* ---------- LARGE MOBILE (576px – 767px) ---------- */
+@media (max-width: 767px) {
+  .jd-cta-banner {
+    padding: 30px 24px;
+    background: linear-gradient(90deg, #8a7d7d, #9a8d8a);
+  }
+  .jd-cta-content,
+  .jd-cta-text { max-width: 100%; }
+  .jd-cta-btn { width: 100%; justify-content: center; }
+}
+
+/* ---------- MOBILE (≤ 575px) ---------- */
+@media (max-width: 575px) {
+  .jd-container { background-position: 75% top; }
+  .container-main-jd-solver { padding: 96px 16px 48px; }
+
+  .jd-hero { margin-top: 10px; padding: 22px 18px; }
+  .jd-hero-title { font-size: 30px; letter-spacing: -0.3px; margin-bottom: 18px; }
+  .jd-hero-text { font-size: 14px; line-height: 1.65; }
+  .jd-hero-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .jd-about { padding: 40px 16px; }
+  .jd-about-title { margin-bottom: 18px; }
+  .jd-about-img { max-width: 100%; }
+  .jd-about-text p { font-size: 14px; line-height: 1.7; }
+
+  .jd-analyze {
+    padding: 40px 16px 250px;
+    background-size: auto 230px;
+  }
+  .jd-analyze-list li { font-size: 13.5px; }
+
+  .jd-support { padding: 40px 16px 30px; }
+  .jd-support-head { margin-bottom: 28px; }
+  .jd-audience { padding: 24px 16px 50px; }
+  .jd-audience-head { margin-bottom: 28px; }
+
+  .jd-support-grid,
+  .jd-audience-grid { grid-template-columns: 1fr; gap: 14px; }
+  .jd-support-card p,
+  .jd-aud-card p { font-size: 13px; }
+
+  .jd-toolsfaq { padding: 24px 16px 40px; }
+  .jd-tools-title br { display: none; }
+  .jd-tools-grid { gap: 12px; }
+  .jd-tool-card { padding: 14px; }
+
+  .jd-faq-card { padding: 22px 16px; }
+  .jd-faq-title { margin-bottom: 18px; }
+  .jd-faq-q { padding: 13px 14px; }
+  .jd-faq-a p { padding: 0 14px; font-size: 12.5px; }
+  .jd-faq-item.open .jd-faq-a p { padding: 0 14px 13px; }
+
+  .jd-cta { padding: 10px 16px 48px; }
+  .jd-cta-banner { padding: 26px 18px; }
+  .jd-cta-title br { display: none; }
+}
+
+/* ---------- SMALL MOBILE (≤ 399px) ---------- */
+@media (max-width: 399px) {
+  .jd-hero-title { font-size: 27px; }
+  .jd-tools-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- TOUCH DEVICES: no lift-on-hover jump ---------- */
+@media (hover: none) {
+  .jd-support-card:hover,
+  .jd-aud-card:hover,
+  .jd-hero-btn:hover,
+  .jd-cta-btn:hover { transform: none; }
+}

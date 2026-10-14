@@ -1,0 +1,753 @@
+
+.ms-page {
+  --ms-bg: #f6f6f8;
+  --ms-card: rgba(255, 255, 255, 0.85);
+  --ms-card-solid: #ffffff;
+  --ms-border: rgba(0, 0, 0, 0.07);
+  --ms-text: #121214;
+  --ms-muted: #6b6b75;
+  --ms-soft: rgba(0, 0, 0, 0.035);
+  --ms-hover: rgba(0, 0, 0, 0.03);
+  --ms-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 12px 32px rgba(0, 0, 0, 0.06);
+  --ms-brand: #f7be2e;
+  --ms-brand-text: #b8860b;
+  --ms-brand-soft: rgba(247, 190, 46, 0.14);
+  --ms-ok: #16a34a;
+  --ms-ok-bg: rgba(22, 163, 74, 0.1);
+  --ms-bad: #e5484d;
+  --ms-bad-bg: rgba(229, 72, 77, 0.1);
+  --ms-pend: #c98a00;
+  --ms-pend-bg: rgba(247, 190, 46, 0.15);
+}
+[data-theme="dark"] .ms-page {
+  --ms-bg: #08080a;
+  --ms-card: rgba(22, 22, 26, 0.8);
+  --ms-card-solid: #16161a;
+  --ms-border: rgba(255, 255, 255, 0.07);
+  --ms-text: #ededf0;
+  --ms-muted: #8e8e98;
+  --ms-soft: rgba(255, 255, 255, 0.04);
+  --ms-hover: rgba(255, 255, 255, 0.03);
+  --ms-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 32px rgba(0, 0, 0, 0.35);
+  --ms-brand-text: #f7be2e;
+  --ms-ok: #3ddc84;
+  --ms-ok-bg: rgba(61, 220, 132, 0.12);
+  --ms-bad: #ff6b6b;
+  --ms-bad-bg: rgba(255, 107, 107, 0.12);
+  --ms-pend: #f7be2e;
+}
+
+/* ── Page ─────────────────────────────────────────── */
+.ms-page {
+  position: relative;
+  min-height: 100vh;
+  background: var(--ms-bg);
+  color: var(--ms-text);
+  font-family: "Figtree", sans-serif;
+  overflow-x: hidden;
+}
+.ms-page *,
+.ms-page *::before,
+.ms-page *::after {
+  box-sizing: border-box;
+}
+.ms-glow {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+}
+.ms-glow-1 {
+  width: 420px;
+  height: 420px;
+  top: -140px;
+  right: -100px;
+  background: rgba(247, 190, 46, 0.18);
+}
+.ms-glow-2 {
+  width: 360px;
+  height: 360px;
+  bottom: -160px;
+  left: -120px;
+  background: rgba(247, 190, 46, 0.1);
+}
+.ms-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+}
+
+/* ── Entry animation ──────────────────────────────── */
+.ms-anim {
+  opacity: 0;
+  animation: msFadeUp 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: var(--d, 0ms);
+}
+@keyframes msFadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Header ───────────────────────────────────────── */
+.ms-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.ms-back {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid var(--ms-border);
+  background: var(--ms-card);
+  color: var(--ms-text);
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.ms-back:hover {
+  color: var(--ms-brand);
+  border-color: var(--ms-brand);
+  transform: translateX(-2px);
+}
+.ms-title {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 4px;
+  color: var(--ms-text);
+}
+.ms-subtitle {
+  margin: 0;
+  color: var(--ms-muted);
+  font-size: 14.5px;
+}
+
+/* ── Grid & cards ─────────────────────────────────── */
+.ms-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.ms-card {
+  background: var(--ms-card);
+  border: 1px solid var(--ms-border);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: var(--ms-shadow);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.ms-card:hover {
+  border-color: rgba(247, 190, 46, 0.25);
+}
+.ms-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.ms-eyebrow {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ms-muted);
+}
+.ms-muted-icon {
+  color: var(--ms-muted);
+}
+.ms-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: var(--ms-text);
+}
+.ms-card-text {
+  font-size: 14px;
+  color: var(--ms-muted);
+  margin: 0 0 18px;
+}
+
+/* ── Plan card ────────────────────────────────────── */
+.ms-plan {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.ms-plan::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd45e, #f7be2e, transparent);
+}
+.ms-plan-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.ms-plan-name h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--ms-text);
+}
+.ms-plan-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffd45e, #f7be2e);
+  color: #1a1a1a;
+  font-size: 17px;
+  box-shadow: 0 6px 18px rgba(247, 190, 46, 0.35);
+}
+.ms-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.ms-stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--ms-soft);
+  border: 1px solid var(--ms-border);
+}
+.ms-stat > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.ms-stat-icon {
+  color: var(--ms-brand);
+  font-size: 15px;
+}
+.ms-stat-label {
+  font-size: 12px;
+  color: var(--ms-muted);
+}
+.ms-stat-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ms-text);
+  text-transform: capitalize;
+}
+.ms-actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* ── Buttons ──────────────────────────────────────── */
+.ms-page .ms-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease,
+              border-color 0.2s ease, color 0.2s ease;
+}
+.ms-page .ms-btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+.ms-page .ms-btn-primary {
+  border: none;
+  color: #1a1a1a;
+  background: linear-gradient(135deg, #ffd45e, #f7be2e);
+  box-shadow: 0 4px 14px rgba(247, 190, 46, 0.35);
+}
+.ms-page .ms-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(247, 190, 46, 0.45);
+}
+.ms-page .ms-btn-ghost {
+  background: transparent;
+  color: var(--ms-muted);
+  border: 1px solid var(--ms-border);
+}
+.ms-page .ms-btn-ghost:hover:not(:disabled) {
+  color: var(--ms-bad);
+  border-color: var(--ms-bad);
+  background: var(--ms-bad-bg);
+}
+.ms-page .ms-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Chips ────────────────────────────────────────── */
+.ms-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.ms-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.ms-chip.ok      { color: var(--ms-ok);    background: var(--ms-ok-bg); }
+.ms-chip.bad     { color: var(--ms-bad);   background: var(--ms-bad-bg); }
+.ms-chip.pending { color: var(--ms-pend);  background: var(--ms-pend-bg); }
+.ms-chip.muted   { color: var(--ms-muted); background: var(--ms-soft); }
+
+/* ── Contacts ─────────────────────────────────────── */
+.ms-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ms-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--ms-border);
+  background: var(--ms-soft);
+  text-decoration: none;
+  color: var(--ms-text);
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+.ms-contact:hover {
+  border-color: rgba(247, 190, 46, 0.5);
+  background: var(--ms-brand-soft);
+  transform: translateY(-1px);
+  color: var(--ms-text);
+}
+.ms-contact-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--ms-brand-soft);
+  color: var(--ms-brand);
+}
+.ms-contact-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+.ms-contact-value {
+  font-size: 14.5px;
+  font-weight: 600;
+}
+.ms-contact-arrow {
+  font-size: 11px;
+  color: var(--ms-muted);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.ms-contact:hover .ms-contact-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── History ──────────────────────────────────────── */
+.ms-history {
+  padding: 0;
+  overflow: hidden;
+}
+.ms-history-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--ms-border);
+}
+.ms-count {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ms-muted);
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--ms-soft);
+  border: 1px solid var(--ms-border);
+  white-space: nowrap;
+}
+.ms-table-wrap {
+  max-height: 420px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 128, 128, 0.35) transparent;
+}
+.ms-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+  margin: 0;
+}
+.ms-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 11px 16px;
+  text-align: left;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ms-muted);
+  background: var(--ms-card-solid);
+  border-bottom: 1px solid var(--ms-border);
+}
+.ms-table td {
+  padding: 13px 16px;
+  color: var(--ms-text);
+  border-bottom: 1px solid var(--ms-border);
+  white-space: nowrap;
+  vertical-align: middle;
+  background: transparent;
+}
+.ms-table tbody tr {
+  transition: background 0.15s ease;
+}
+.ms-table tbody tr:hover {
+  background: var(--ms-hover);
+}
+.ms-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.ta-r {
+  text-align: right !important;
+}
+.ms-td-muted {
+  color: var(--ms-muted) !important;
+}
+.ms-amount {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.ms-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12.5px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: var(--ms-soft);
+  color: var(--ms-text);
+}
+
+/* ── Invoice link + download (global button reset) ── */
+.ms-invoice-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.ms-page button.ms-invoice-link {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0;
+  min-width: 0;
+  height: auto;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ms-brand-text) !important;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease, opacity 0.2s ease;
+}
+.ms-page button.ms-invoice-link:hover {
+  text-decoration-color: currentColor;
+}
+.ms-page button.ms-invoice-link:focus-visible {
+  outline: 2px solid var(--ms-brand);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.ms-page button.ms-invoice-link:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.ms-page button.ms-invoice-dl {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  padding: 0 !important;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border: 1px solid var(--ms-border) !important;
+  background: var(--ms-soft) !important;
+  box-shadow: none !important;
+  color: var(--ms-muted) !important;
+  font-size: 11px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease, color 0.15s ease, border-color 0.15s ease,
+              background 0.15s ease;
+}
+.ms-table tbody tr:hover .ms-invoice-dl {
+  opacity: 1;
+}
+.ms-page button.ms-invoice-dl:hover {
+  color: var(--ms-brand) !important;
+  border-color: var(--ms-brand) !important;
+  background: var(--ms-brand-soft) !important;
+}
+.ms-page button.ms-invoice-dl:focus-visible {
+  opacity: 1;
+  outline: 2px solid var(--ms-brand);
+  outline-offset: 2px;
+}
+.ms-page button.ms-invoice-dl:disabled {
+  cursor: wait;
+}
+@media (hover: none) {
+  .ms-page button.ms-invoice-dl {
+    opacity: 1;
+  }
+}
+
+/* ── Empty & skeleton ─────────────────────────────── */
+.ms-empty {
+  text-align: center;
+  padding: 44px 20px;
+}
+.ms-empty-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: var(--ms-brand-soft);
+  color: var(--ms-brand);
+  font-size: 22px;
+}
+.ms-empty-title {
+  font-weight: 700;
+  font-size: 15.5px;
+  margin: 0 0 4px;
+}
+.ms-empty-text {
+  color: var(--ms-muted);
+  font-size: 13.5px;
+  margin: 0;
+}
+.ms-skel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 22px;
+}
+.ms-skel {
+  display: block;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    var(--ms-soft) 25%,
+    rgba(128, 128, 128, 0.16) 37%,
+    var(--ms-soft) 63%
+  );
+  background-size: 400% 100%;
+  animation: msShimmer 1.4s ease infinite;
+}
+@keyframes msShimmer {
+  0%   { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ── Invoice PDF viewer ───────────────────────────── */
+.ms-pdf-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  animation: msPdfFade 0.18s ease;
+}
+.ms-pdf-box {
+  width: 100%;
+  max-width: 900px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--ms-card-solid);
+  border: 1px solid var(--ms-border);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+  animation: msPdfPop 0.22s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.ms-pdf-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--ms-border);
+  background: var(--ms-card-solid);
+}
+.ms-pdf-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--ms-text);
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ms-pdf-title-icon {
+  color: var(--ms-bad);
+}
+.ms-pdf-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.ms-page .ms-pdf-btn {
+  padding: 7px 14px;
+  font-size: 13px;
+}
+.ms-page button.ms-pdf-close {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  border: 1px solid var(--ms-border);
+  background: transparent;
+  color: var(--ms-muted);
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.ms-page button.ms-pdf-close:hover {
+  color: var(--ms-bad);
+  border-color: var(--ms-bad);
+  background: var(--ms-bad-bg);
+}
+.ms-pdf-frame {
+  flex: 1;
+  width: 100%;
+  border: none;
+  background: #525659;
+}
+@keyframes msPdfFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes msPdfPop {
+  from { opacity: 0; transform: translateY(12px) scale(0.98); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 900px) {
+  .ms-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .ms-pdf-overlay {
+    padding: 0;
+  }
+  .ms-pdf-box {
+    height: 100vh;
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+@media (max-width: 520px) {
+  .ms-container {
+    padding: 18px 14px 36px;
+  }
+  .ms-title {
+    font-size: 22px;
+  }
+  .ms-stats {
+    grid-template-columns: 1fr;
+  }
+  .ms-actions {
+    flex-direction: column-reverse;
+  }
+  .ms-page .ms-btn {
+    justify-content: center;
+    width: 100%;
+  }
+  .ms-page .ms-pdf-btn {
+    width: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ms-anim {
+    animation: none;
+    opacity: 1;
+  }
+  .ms-skel,
+  .ms-pdf-overlay,
+  .ms-pdf-box {
+    animation: none;
+  }
+}

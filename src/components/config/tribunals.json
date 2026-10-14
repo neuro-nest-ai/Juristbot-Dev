@@ -1,0 +1,19 @@
+{
+  "Tribunals": [
+    { "id": 1, "name": "National Green Tribunal", "location": "New Delhi", "state": "Delhi" },
+    { "id": 2, "name": "Income Tax Appellate Tribunal", "location": "New Delhi", "state": "Delhi" },
+    { "id": 3, "name": "Customs, Excise and Service Tax Appellate Tribunal", "location": "New Delhi", "state": "Delhi" },
+    { "id": 4, "name": "Telecom Disputes Settlement and Appellate Tribunal", "location": "New Delhi", "state": "Delhi" },
+    { "id": 5, "name": "Securities Appellate Tribunal", "location": "Mumbai", "state": "Maharashtra" },
+    { "id": 6, "name": "Debt Recovery Tribunal", "location": "New Delhi", "state": "Delhi" },
+    { "id": 7, "name": "Armed Forces Tribunal", "location": "New Delhi", "state": "Delhi" },
+    { "id": 8, "name": "National Company Law Tribunal", "location": "New Delhi", "state": "Delhi" },
+    { "id": 9, "name": "National Company Law Appellate Tribunal", "location": "New Delhi", "state": "Delhi" },
+    { "id": 10, "name": "Real Estate Regulatory Authority", "location": "New Delhi", "state": "Delhi" },
+    { "id": 11, "name": "Central Administrative Tribunal", "location": "New Delhi", "state": "Delhi" },
+    { "id": 12, "name": "Competition Appellate Tribunal", "location": "New Delhi", "state": "Delhi" },
+    { "id": 13, "name": "Intellectual Property Appellate Board", "location": "Chennai", "state": "Tamil Nadu" },
+    { "id": 14, "name": "Appellate Tribunal for Electricity", "location": "New Delhi", "state": "Delhi" },
+    { "id": 15, "name": "National Consumer Disputes Redressal Commission", "location": "New Delhi", "state": "Delhi" }
+  ]
+}
