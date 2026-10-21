@@ -27,6 +27,100 @@ button { cursor: pointer; }
 
 .summary-id { margin-top: 3px; letter-spacing: .03em !important; }
 .summary-actions { display: flex; align-items: center; gap: 7px; }
+
+/* Track Order follows the wider spacing and card proportions from the design. */
+.track-order-page > .back-link { margin-bottom: 26px; }
+.track-order-page .track-heading { margin-bottom: 24px; }
+.track-order-page .track-heading .marketplace-title { font-size: 32px !important; }
+.track-order-page .track-heading .marketplace-subtitle { margin-top: 8px; font-size: 16px !important; }
+.track-order-page .track-summary { min-height: 100px; padding: 22px 30px; margin-bottom: 24px; }
+.track-order-page .progress-card { padding: 32px; gap: 28px; min-height: 590px; }
+.track-order-page .progress-card { grid-template-columns: minmax(0, 1fr) 400px; }
+.track-order-page .progress-title { margin-bottom: 2px; }
+.track-order-page .progress-bar { margin-top: 18px; margin-bottom: 24px; }
+.track-order-page .current-status-card { width: 400px; min-height: 295px; padding: 24px; gap: 10px; }
+.track-order-page .current-status-card .status-facts { grid-template-columns: 1fr 1fr; gap: 10px; }
+.track-order-page .current-status-card .status-facts span { min-width: 0; padding: 16px 18px; border: 1px solid #e6e4de; border-radius: 16px; background: #faf9f6; }
+.track-order-page .current-status-card .yellow-btn { width: 350px; min-height: 50px; align-self: center; border-radius: 12px; font-size: 15px; }
+
+@media (max-width: 800px) {
+  .track-order-page > .back-link { margin-bottom: 20px; }
+  .track-order-page .track-heading { margin-bottom: 18px; }
+  .track-order-page .track-summary { padding: 18px; margin-bottom: 18px; }
+  .track-order-page .progress-card { grid-template-columns: 1fr; padding: 20px; min-height: 0; }
+  .track-order-page .current-status-card { width: 100%; min-height: 0; }
+  .track-order-page .current-status-card .yellow-btn { width: 100%; }
+}
+
+.workspace-top-tabs { display: flex; justify-content: flex-end; gap: 0; min-height: 48px; margin: 18px 0 20px; padding: 4px; background: #e8e7e4; border-radius: 12px; }
+.workspace-top-tabs button { min-width: 145px; border: 0; border-radius: 10px; background: transparent; color: #272727; padding: 0 20px; font-size: 15px; font-weight: 600; }
+.workspace-top-tabs button.active { background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .12); }
+.upload-page .advocate-order-head { min-height: 122px; padding: 24px; border-radius: 16px; }
+.upload-page .advocate-order-head .advocate-avatar { width: 72px; height: 72px; flex-basis: 72px; font-size: 24px; }
+.upload-page .advocate-order-head h2 { font-family: 'Sora', Arial, sans-serif; font-size: 20px; }
+.upload-page .advocate-order-head > div:nth-child(2) > span { font-size: 14px; }
+.upload-page .order-head-right { text-align: right; }
+.upload-page .order-head-right small { font-family: 'DM Sans', Arial, sans-serif; font-size: 12px; letter-spacing: .08em; }
+.upload-page .advocate-order-head > div:nth-child(2) { min-width: 0; flex: 1 1 auto; }
+.upload-page .order-head-right { flex: 0 1 300px; min-width: 200px; }
+.upload-page .order-head-right strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: 'Sora', Arial, sans-serif; font-size: 17px; font-weight: 600; }
+.upload-page .quote-tabs { margin-bottom: 20px; }
+.upload-page .upload-summary-card { min-height: 84px; padding: 18px 22px; border-radius: 16px; }
+.upload-page .upload-summary-card small { font-size: 12px !important; letter-spacing: .08em; }
+.upload-page .upload-summary-card strong { font-family: 'Sora', Arial, sans-serif !important; font-size: 16px !important; font-weight: 600; }
+.upload-page .order-head-right { min-width: 300px; }
+.upload-page .upload-summary-card { grid-template-columns: minmax(0, 1.7fr) minmax(180px, 1fr) 360px; }
+.upload-page .summary-actions { justify-content: flex-end; gap: 10px; width: 360px; }
+.upload-page .summary-actions .yellow-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; flex: 0 0 175px; min-height: 52px; border-radius: 6px; background: #f5b400; color: #fff; font-family: 'Sora', Arial, sans-serif !important; font-size: 17px !important; font-weight: 600; }
+.upload-page .summary-actions .yellow-btn svg { flex: 0 0 auto; }
+.upload-page .summary-actions .download-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; flex: 0 0 175px; min-height: 52px; border: 1px solid #f5b400; border-radius: 6px; background: #ffecb8; color: #f5b400; font-family: 'Sora', Arial, sans-serif !important; font-size: 17px !important; font-weight: 600; }
+.app-shell .content-area { width: 100%; max-width: 1156px; margin: 0 auto; padding: 28px 32px 48px; }
+.app-shell .content-area > * { width: 100%; max-width: none; }
+.app-shell .content-area section, .app-shell .content-area article, .app-shell .content-area form { box-sizing: border-box; }
+.upload-page .order-overview-card { display: flex; flex-direction: column; gap: 20px; padding: 22px; border-radius: 16px; }
+.upload-page .overview-heading { border-bottom: 1px solid #e6e4de; }
+.upload-page .overview-heading h2 { width: fit-content; margin: 0; padding: 0 0 16px; border-bottom: 3px solid #f5b400; font-family: 'Sora', Arial, sans-serif; font-size: 16px; }
+.upload-page .drafting-timeline { margin: 0 8px; }
+.upload-page .drafting-timeline-label { color: #5f5d58; margin-bottom: 18px; font-family: 'DM Sans', Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: .09em; line-height: 1; }
+.upload-page .overview-line { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-top: 0; position: relative; }
+.upload-page .overview-line:before { display: none; }
+.upload-page .overview-line i { width: 100%; height: 5px; border: 0; border-radius: 999px; background: #e6e4de; box-shadow: none; }
+.upload-page .overview-line i:first-child, .upload-page .overview-line i:last-child { justify-self: stretch; }
+.upload-page .overview-line i.done { background: #141414; box-shadow: none; }
+.upload-page .overview-line i.current { background: #f5b400; box-shadow: none; }
+.upload-page .overview-labels { gap: 8px; margin-top: 8px; font-size: 13px; text-align: left; }
+.upload-page .overview-labels span { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: left !important; }
+.upload-page .overview-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; padding-top: 0; border-top: 0; }
+.upload-page .overview-stats div, .upload-page .overview-stats div:first-child { min-width: 0; min-height: 69px; padding: 14px 16px; border: 1px solid #efeee9; border-radius: 12px; background: #fafaf7; }
+.upload-page .overview-stats small { font-family: 'DM Sans', Arial, sans-serif !important; font-size: 12px !important; font-weight: 600; letter-spacing: 0; }
+.upload-page .overview-stats strong { font-family: 'Sora', Arial, sans-serif; font-size: 15px; font-weight: 600; }
+.upload-page .workspace-notice { min-height: 54px; margin: 0; padding: 16px 18px; gap: 12px; border: 1px solid #f3de9a; border-radius: 12px; background: #fff6d6; color: #4d3700; font-family: 'DM Sans', Arial, sans-serif !important; font-size: 14px !important; font-weight: 400; }
+.upload-page .workspace-notice span { font-size: 14px !important; font-weight: 400; }
+.upload-page .supporting-heading { margin: 0; color: #5f5d58; font-family: 'DM Sans', Arial, sans-serif !important; font-size: 12px !important; font-weight: 700; letter-spacing: .09em; line-height: 1; }
+.upload-page .supporting-file-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.upload-page .supporting-file { min-width: 0; min-height: 69px; padding: 14px; border-radius: 14px; }
+.upload-page .supporting-file > b { width: 42px; height: 42px; border-radius: 10px; font-size: 10px; }
+.upload-page .supporting-file strong { max-width: none; font-size: 14px; }
+.upload-page .supporting-file small { font-size: 13px; }
+
+@media (max-width: 800px) {
+  .workspace-top-tabs { justify-content: stretch; overflow-x: auto; }
+  .workspace-top-tabs button { min-width: max-content; flex: 1; padding: 0 12px; }
+  .upload-page .advocate-order-head { padding: 18px; }
+  .upload-page .advocate-order-head .advocate-avatar { width: 56px; height: 56px; flex-basis: 56px; }
+  .upload-page .order-head-right { min-width: 0; }
+  .upload-page .upload-summary-card { grid-template-columns: 1fr; gap: 16px; }
+  .upload-page .summary-actions { justify-content: stretch; width: 100%; }
+  .upload-page .summary-actions .yellow-btn, .upload-page .summary-actions .download-btn { flex: 1; }
+  .upload-page .supporting-file-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 1000px) and (min-width: 801px) {
+  .upload-page .upload-summary-card { grid-template-columns: minmax(0, 1fr) minmax(140px, .8fr); row-gap: 16px; }
+  .upload-page .summary-actions { grid-column: 1 / -1; justify-self: end; }
+  .upload-page .advocate-order-head { gap: 16px; }
+  .upload-page .order-head-right { flex-basis: 240px; min-width: 160px; }
+}
 .summary-actions .yellow-btn { flex: 1; }
 .download-btn { border: 1px solid #deded8; background: #fff; border-radius: 5px; padding: 8px 10px; color: #444; font-size: 9px; white-space: nowrap; cursor: pointer; }
 .order-overview-card { background: #fff; border: 1px solid #e5e5df; border-radius: 10px; padding: 16px; margin-bottom: 12px; }

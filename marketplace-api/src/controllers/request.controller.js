@@ -1,5 +1,6 @@
 const { query } = require('../database/pool');
 const { badRequest, notFound, forbidden } = require('../utils/http');
+const env = require('../config/env');
 
 const STATUSES = ['open', 'bidding', 'awarded', 'in_progress', 'delivered', 'completed', 'cancelled'];
 
@@ -39,6 +40,23 @@ async function create(req, res, next) {
         deadline || null,
       ]
     );
+    if (env.demoMode) {
+      const advocates = await query("SELECT id FROM marketplace_users WHERE role = 'advocate' ORDER BY id LIMIT 3");
+      const demoBids = [
+        [500000, 3, 'I can prepare a clear, complete draft tailored to your requirements.'],
+        [650000, 5, 'I will include practical clauses and deliver the first draft on time.'],
+        [800000, 2, 'I can turn this around quickly with a thorough legal review.'],
+      ];
+      for (let index = 0; index < advocates.length; index += 1) {
+        const [amount, timeline, message] = demoBids[index];
+        await query(
+          `INSERT INTO marketplace_bids (request_id, advocate_id, amount, timeline_days, message, status)
+           VALUES (?, ?, ?, ?, ?, 'pending')`,
+          [result.insertId, advocates[index].id, amount, timeline, message]
+        );
+      }
+      await query("UPDATE marketplace_requests SET status = 'bidding' WHERE id = ?", [result.insertId]);
+    }
     const [row] = await query('SELECT * FROM marketplace_requests WHERE id = ?', [result.insertId]);
     res.status(201).json({ request: row });
   } catch (err) {

@@ -14,11 +14,10 @@ export default function Login() {
 
   const onChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
+  const signIn = async (email, password) => {
     setSubmitting(true);
     try {
-      await login(form.email, form.password);
+      await login(email, password);
       toast.success('Logged in');
       navigate(location.state?.from || '/marketplace', { replace: true });
     } catch (err) {
@@ -26,6 +25,18 @@ export default function Login() {
     } finally {
       setSubmitting(false);
     }
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    await signIn(form.email, form.password);
+  };
+
+  const loginAs = (role) => {
+    const account = role === 'advocate'
+      ? { email: 'advocate@marketplace.local', password: 'Advocate@123' }
+      : { email: 'buyer@marketplace.local', password: 'Buyer@123' };
+    signIn(account.email, account.password);
   };
 
   return (
@@ -61,6 +72,17 @@ export default function Login() {
               <Button type="submit" variant="contained" size="large" disabled={submitting}>
                 {submitting ? 'Signing in...' : 'Sign in'}
               </Button>
+              <Typography variant="body2" color="text.secondary" align="center">
+                Or continue with a demo account
+              </Typography>
+              <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1}>
+                <Button type="button" fullWidth variant="outlined" disabled={submitting} onClick={() => loginAs('buyer')}>
+                  Continue as Client
+                </Button>
+                <Button type="button" fullWidth variant="outlined" disabled={submitting} onClick={() => loginAs('advocate')}>
+                  Continue as Advocate
+                </Button>
+              </Stack>
             </Stack>
           </form>
           <Typography variant="body2" sx={{ mt: 3 }}>

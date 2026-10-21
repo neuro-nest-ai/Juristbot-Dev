@@ -83,6 +83,22 @@ async function main() {
   }
   await query("UPDATE marketplace_requests SET status = 'bidding' WHERE id = ? AND status = 'open'", [sampleRequestId]);
 
+  const existingOrder = await query('SELECT id FROM marketplace_orders WHERE request_id = ? LIMIT 1', [sampleRequestId]);
+  if (!existingOrder.length) {
+    const [demoBid] = await query('SELECT * FROM marketplace_bids WHERE request_id = ? ORDER BY id LIMIT 1', [sampleRequestId]);
+    if (demoBid) {
+      await query("UPDATE marketplace_requests SET status = 'awarded' WHERE id = ?", [sampleRequestId]);
+      await query("UPDATE marketplace_bids SET status = 'rejected' WHERE request_id = ? AND id <> ? AND status = 'pending'", [sampleRequestId, demoBid.id]);
+      await query("UPDATE marketplace_bids SET status = 'accepted' WHERE id = ?", [demoBid.id]);
+      await query(
+        `INSERT INTO marketplace_orders
+          (order_number, request_id, bid_id, client_id, advocate_id, amount, status, escrow_status)
+         VALUES (?, ?, ?, ?, ?, ?, 'in_progress', 'held')`,
+        ['MK-DEMO-0001', sampleRequestId, demoBid.id, buyerId, demoBid.advocate_id, demoBid.amount]
+      );
+    }
+  }
+
   console.log('Seed complete.');
   console.log('  admin@marketplace.local / Admin@123');
   console.log('  buyer@marketplace.local / Buyer@123');
