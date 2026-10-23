@@ -15,6 +15,12 @@ const initialForm = {
   budget_max: '',
 };
 
+function nextDateInputValue() {
+  const date = new Date();
+  date.setDate(date.getDate() + 1);
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+
 export default function DraftPost() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -23,6 +29,7 @@ export default function DraftPost() {
   const [files, setFiles] = useState(() => draftState?.files || []);
   const [deliverables, setDeliverables] = useState(() => draftState?.deliverables || ['DOC', 'PDF']);
   const [saving, setSaving] = useState(false);
+  const minimumDeadline = nextDateInputValue();
 
   const update = (event) => setForm((current) => ({ ...current, [event.target.name]: event.target.value }));
 
@@ -73,16 +80,16 @@ export default function DraftPost() {
           <section className="form-section">
             <div className="section-label"><span className="section-badge">A</span><div><strong>Request Details</strong><small>A clear title and scope help advocates quote accurately.</small></div></div>
             <div className="form-grid">
-              <label><span className="field-label">Request Title</span><input className="draft-input" name="title" value={form.title} onChange={update} placeholder="e.g. Commercial Lease Agreement" /></label>
+               <label><span className="field-label">Request Title</span><input className="draft-input" name="title" value={form.title} onChange={update} minLength={3} maxLength={200} placeholder="e.g. Commercial Lease Agreement" /></label>
               <label><span className="field-label">Document Type</span><select className="draft-input" name="category" value={form.category} onChange={update}><option>Drafting</option><option>Agreement</option><option>Notice</option><option>Petition</option><option>Other</option></select></label>
-              <label style={{ gridColumn: '1 / -1' }}><span className="field-label">Scope / Description</span><textarea className="draft-textarea" name="description" value={form.description} onChange={update} placeholder="Explain what you need drafted, including parties, jurisdiction and important clauses." /><span className="field-help">Be specific about clauses, parties and jurisdiction.</span></label>
+               <label style={{ gridColumn: '1 / -1' }}><span className="field-label">Scope / Description</span><textarea className="draft-textarea" name="description" value={form.description} onChange={update} minLength={20} maxLength={5000} placeholder="Explain what you need drafted, including parties, jurisdiction and important clauses." /><span className="field-help">Be specific about clauses, parties and jurisdiction.</span></label>
             </div>
           </section>
 
           <section className="form-section">
             <div className="section-label"><span className="section-badge">B</span><div><strong>Delivery Requirements</strong><small>When do you need the final draft?</small></div></div>
             <div className="form-grid">
-              <label><span className="field-label">Required By</span><input className="draft-input" type="date" name="deadline" value={form.deadline} onChange={update} /></label>
+               <label><span className="field-label">Required By</span><input className="draft-input" type="date" name="deadline" value={form.deadline} min={minimumDeadline} onChange={update} /></label>
               <label><span className="field-label">Preferred Delivery Time <em>(optional)</em></span><input className="draft-input" type="time" name="time" value={form.time} onChange={update} /></label>
             </div>
           </section>
@@ -94,7 +101,7 @@ export default function DraftPost() {
 
           <section className="form-section">
             <div className="section-label"><span className="section-badge">F</span><div><strong>Additional Requirements</strong><small>Optional instructions for the advocate.</small></div></div>
-            <label><span className="field-label">Additional notes <em>(optional)</em></span><textarea className="draft-textarea" name="notes" value={form.notes} onChange={update} placeholder="Mention special clauses, style preferences or other instructions." /></label>
+             <label><span className="field-label">Additional notes <em>(optional)</em></span><textarea className="draft-textarea" name="notes" value={form.notes} onChange={update} maxLength={2000} placeholder="Mention special clauses, style preferences or other instructions." /></label>
           </section>
 
           <section className="form-section">

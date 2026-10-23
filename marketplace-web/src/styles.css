@@ -254,9 +254,13 @@ button { cursor: pointer; }
 .review-summary-heading button svg { display: block; flex: 0 0 14px; }
 .review-summary-card h2 { font-family: 'Sora', Arial, sans-serif !important; font-size: 17px; line-height: 1; font-weight: 600; }
 .review-summary-card p, .review-summary-card .review-row, .review-summary-card .review-row span, .review-summary-card .review-row strong { font-size: 14px !important; }
+.review-summary-card h2, .review-summary-card p { max-width: 100%; overflow-wrap: anywhere; word-break: break-word; }
+.review-inline-fields { min-width: 0; }
 .review-summary-card .review-file strong { font-size: 14px !important; }
 .review-summary-card .review-file small { font-size: 13px !important; }
 .quote-request-summary { min-height: 80px; align-items: center; padding: 0 22px; border-radius: 16px; }
+.quote-request-summary > div { min-width: 0; }
+.quote-request-summary strong { max-width: 100%; overflow-wrap: anywhere; word-break: break-word; }
 .quote-tabs { min-height: 48px; padding: 4px; border-radius: 12px; align-items: center; }
 .quote-tab { min-height: 40px; padding: 0 16px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; }
 .quotes-top-tabs, .assignment-top-tabs { display: flex; justify-content: flex-end; align-items: center; gap: 0; height: 44px; padding: 4px; background: #e8e7e4; border-radius: 12px; }
@@ -273,7 +277,10 @@ button { cursor: pointer; }
 .draft-posts-table-wrap { overflow: hidden; border-radius: 16px; border: 1px solid #e6e4de; background: #fff; box-shadow: 0 5px 18px rgba(20, 20, 20, .06); }
 .draft-posts-table th { height: 79px; color: #f5b400; text-align: center; }
 .assignment-card { min-height: 82px; padding: 18px 22px; column-gap: 10px; row-gap: 10px; border-radius: 16px; border: 1px solid #e6e4de; background: #fff; box-shadow: 0 5px 18px rgba(20, 20, 20, .05); }
+.assignment-card > * { min-width: 0; }
+.assignment-title { min-width: 0; }
 .assignment-title h2 { font-family: 'Sora', Arial, sans-serif !important; font-size: 16px !important; line-height: 1.1; font-weight: 600; }
+.assignment-title h2 { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; }
 .assignment-title small, .assignment-advocate small, .assignment-amount small, .assignment-deadline small { font-size: 12px !important; }
 .assignment-advocate strong, .assignment-amount strong, .assignment-deadline strong { font-size: 14px !important; }
 .assignment-status { font-size: 12px !important; }
@@ -313,4 +320,46 @@ button { cursor: pointer; }
   .post-footer .review-btn { align-self: flex-end; }
   .review-footer { gap: 12px; align-items: flex-start; flex-direction: column; }
   .review-footer > div { align-self: flex-end; }
+}
+
+/* Keep the same 24px section rhythm used by the workspace reference. */
+.app-shell .content-area > .back-link { margin-bottom: 20px; }
+.app-shell .content-area .post-head,
+.app-shell .content-area .draft-posts-heading,
+.app-shell .content-area .quotes-heading,
+.app-shell .content-area .track-heading { margin-bottom: 24px; }
+.app-shell .content-area .post-head .marketplace-subtitle { margin-bottom: 0; }
+.app-shell .content-area .workspace-top-tabs,
+.app-shell .content-area .quotes-top-tabs,
+.app-shell .content-area .assignment-top-tabs { margin-bottom: 24px; }
+.app-shell .content-area .advocate-order-head,
+.app-shell .content-area .upload-summary-card,
+.app-shell .content-area .quote-request-summary,
+.app-shell .content-area .track-summary { margin-bottom: 24px; }
+.app-shell .content-area .quote-tabs,
+.app-shell .content-area .assignment-tabs { margin-bottom: 24px; }
+.app-shell .content-area .order-overview-card { margin-bottom: 24px; }
+
+@media (max-width: 800px) {
+  .app-shell .content-area > .back-link { margin-bottom: 20px; }
+  .app-shell .content-area .post-head,
+  .app-shell .content-area .draft-posts-heading,
+  .app-shell .content-area .quotes-heading,
+  .app-shell .content-area .track-heading,
+  .app-shell .content-area .workspace-top-tabs,
+  .app-shell .content-area .quotes-top-tabs,
+  .app-shell .content-area .assignment-top-tabs,
+  .app-shell .content-area .advocate-order-head,
+  .app-shell .content-area .upload-summary-card,
+  .app-shell .content-area .quote-request-summary,
+  .app-shell .content-area .track-summary,
+  .app-shell .content-area .quote-tabs,
+  .app-shell .content-area .assignment-tabs { margin-bottom: 18px; }
+}
+
+.draft-posts-table td:nth-child(2) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; }
+.draft-posts-actions { display: flex; align-items: center; gap: 12px; }
+
+@media (max-width: 800px) {
+  .draft-posts-actions { width: 100%; flex-wrap: wrap; }
 }

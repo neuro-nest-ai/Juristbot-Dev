@@ -99,6 +99,54 @@ async function main() {
     }
   }
 
+  const openAdvocateRequest = await query("SELECT id FROM marketplace_requests WHERE client_id = ? AND title = 'Employment Agreement Draft' LIMIT 1", [buyerId]);
+  if (!openAdvocateRequest.length) {
+    await query(
+      `INSERT INTO marketplace_requests
+        (client_id, title, description, category, jurisdiction, budget_min, budget_max, deadline, status)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'open')`,
+      [
+        buyerId,
+        'Employment Agreement Draft',
+        'Prepare an employment agreement covering compensation, confidentiality, intellectual property, notice period and termination terms.',
+        'Agreement',
+        'Tamil Nadu',
+        300000,
+        700000,
+        '2026-11-15',
+      ]
+    );
+  }
+
+  const bidRequest = await query("SELECT id FROM marketplace_requests WHERE client_id = ? AND title = 'Website Terms of Use' LIMIT 1", [buyerId]);
+  let bidRequestId = bidRequest[0]?.id;
+  if (!bidRequestId) {
+    const result = await query(
+      `INSERT INTO marketplace_requests
+        (client_id, title, description, category, jurisdiction, budget_min, budget_max, deadline, status)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'bidding')`,
+      [
+        buyerId,
+        'Website Terms of Use',
+        'Draft website terms covering acceptable use, user content, disclaimers, limitations of liability and governing law.',
+        'Drafting',
+        'India',
+        200000,
+        450000,
+        '2026-12-01',
+      ]
+    );
+    bidRequestId = result.insertId;
+  }
+  const demoAdvocateBid = await query('SELECT id FROM marketplace_bids WHERE request_id = ? AND advocate_id = ? LIMIT 1', [bidRequestId, demoAdvocateId]);
+  if (!demoAdvocateBid.length) {
+    await query(
+      `INSERT INTO marketplace_bids (request_id, advocate_id, amount, timeline_days, message, status)
+       VALUES (?, ?, ?, ?, ?, 'pending')`,
+      [bidRequestId, demoAdvocateId, 350000, 4, 'I can prepare clear, practical website terms with strong liability and user-content protections.']
+    );
+  }
+
   console.log('Seed complete.');
   console.log('  admin@marketplace.local / Admin@123');
   console.log('  buyer@marketplace.local / Buyer@123');
